@@ -305,10 +305,11 @@
                 <artifactId>tomcat-maven-plugin</artifactId>
                 <version>1.0-beta-1</version>
                 <configuration>
-                    <server>geo-api-ci</server>
+                    <server>coreapi-ci</server>
                     <url>http://coreapi.net:8080/manager</url>
                     <port>8081</port>
-                    <path>/SNAPSHOTS/${coreapi-net.deploy-path}</path>
+                    <!--SNAPSHOTS/${coreapi-net.deploy-path}-->
+                    <path>/</path>
                     <warFile>${project.basedir}/target/${project.build.finalName}.war</warFile>
                 </configuration>
             </plugin>
