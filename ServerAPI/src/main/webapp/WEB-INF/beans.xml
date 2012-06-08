@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <import resource="classpath:META-INF/cxf/cxf.xml"/>
+    <import resource="classpath:META-INF/cxf/cxf-extension-jaxrs-binding.xml"/>
+    <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
+
+    <context:annotation-config/>
+
+    <bean id="placeholderConfigurer"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="ignoreUnresolvablePlaceholders" value="false"/>
+        <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE"/>
+        <property name="ignoreResourceNotFound" value="false"/>
+        <property name="locations">
+            <list>
+                <value>classpath*:/application.properties</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <context:component-scan base-package="net.coreapi"/>
+
+    <jaxrs:server id="services" address="/">
+        <jaxrs:serviceBeans>
+            <ref bean="healthService" />
+            <ref bean="webViewService" />
+            <ref bean="memberService" />
+        </jaxrs:serviceBeans>
+        <jaxrs:providers>
+            <bean id="apiResponseMessageBodyWriter" class="net.coreapi.api.server.APIResponseMessageBodyWriter" />
+        </jaxrs:providers>
+    </jaxrs:server>
+
+    <bean id="healthService" class="net.coreapi.api.server.services.HealthService"></bean>
+    <bean id="webViewService" class="net.coreapi.api.server.services.WebViewService"></bean>
+    <bean id="memberService" class="net.coreapi.api.server.services.MemberService"></bean>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<bean id="ideasDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+        <!--<property name="driverClassName" value="${jdbc.driver}"/>-->
+        <!--<property name="url" value="${jdbc.url}"/>-->
+        <!--<property name="username" value="${jdbc.username}"/>-->
+        <!--<property name="password" value="${jdbc.password}"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="ideasEntityManager" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">-->
+        <!--<property name="dataSource" ref="ideasDataSource"/>-->
+        <!--<property name="persistenceUnitName" value="ideaPersistenceUnit"/>-->
+        <!--<property name="jpaDialect">-->
+            <!--<bean class="org.springframework.orm.jpa.vendor.HibernateJpaDialect"/>-->
+        <!--</property>-->
+
+        <!--<property name="jpaVendorAdapter">-->
+            <!--<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">-->
+                <!--<property name="database" value="${database}"/>-->
+                <!--<property name="showSql" value="false"/>-->
+                <!--<property name="databasePlatform" value="org.hibernate.dialect.MySQL5Dialect" />-->
+            <!--</bean>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--<bean id="likesDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+        <!--<property name="driverClassName" value="${jdbc.driver}"/>-->
+        <!--<property name="url" value="${jdbc.url}"/>-->
+        <!--<property name="username" value="${jdbc.username}"/>-->
+        <!--<property name="password" value="${jdbc.password}"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="likesEntityManager" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">-->
+        <!--<property name="dataSource" ref="likesDataSource"/>-->
+        <!--<property name="persistenceUnitName" value="likePersistenceUnit"/>-->
+        <!--<property name="jpaDialect">-->
+            <!--<bean class="org.springframework.orm.jpa.vendor.HibernateJpaDialect"/>-->
+        <!--</property>-->
+
+        <!--<property name="jpaVendorAdapter">-->
+            <!--<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">-->
+                <!--<property name="database" value="${database}"/>-->
+                <!--<property name="showSql" value="false"/>-->
+                <!--<property name="databasePlatform" value="org.hibernate.dialect.MySQL5Dialect" />-->
+            <!--</bean>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--<bean id="txManager"-->
+          <!--class="org.springframework.orm.jpa.JpaTransactionManager">-->
+        <!--<property name="entityManagerFactory" ref="ideasEntityManager"/>-->
+        <!--<property name="dataSource" ref="ideasDataSource"/>-->
+        <!--<qualifier value="coreapi" />-->
+    <!--</bean>-->
+    <!--<tx:annotation-driven transaction-manager="txManager"/>-->
+    <!--<bean id="likeTransactionManager"-->
+          <!--class="org.springframework.orm.jpa.JpaTransactionManager">-->
+        <!--<property name="entityManagerFactory" ref="likesEntityManager"/>-->
+        <!--<property name="dataSource" ref="likesDataSource"/>-->
+        <!--<qualifier value="likes" />-->
+    <!--</bean>-->
+
+    <context:component-scan base-package="net.coreapi">
+    </context:component-scan>
+</beans>
