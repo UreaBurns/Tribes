@@ -307,7 +307,7 @@
                 <configuration>
                     <server>coreapi-ci</server>
                     <url>http://coreapi.net:8080/manager</url>
-                    <port>8081</port>
+                    <port>8080</port>
                     <!--SNAPSHOTS/${coreapi-net.deploy-path}-->
                     <path>/</path>
                     <warFile>${project.basedir}/target/${project.build.finalName}.war</warFile>
