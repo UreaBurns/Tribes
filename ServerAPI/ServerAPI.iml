@@ -73,6 +73,7 @@
     <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.5.5" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.8.2" level="project" />
     <orderEntry type="library" name="Maven: com.scottbyrns.utilities:json-object-mapper:1.1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.social:spring-social-core:1.0.1.RELEASE" level="project" />
   </component>
 </module>
 

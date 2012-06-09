@@ -1,8 +1,11 @@
 package org.goodtech.tribes.location;
 
+import org.goodtech.sense.CompoundSensor;
+import org.goodtech.sense.Sensor;
+
 /**
- * Copyright (C) 2012 by Scott Byrns
- * http://github.com/scottbyrns
+ * Copyright (C) 2012 by Michael Scott Byrns & Carmelo Urea
+ * http://github.com/ureaburns
  * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
@@ -15,7 +18,56 @@ package org.goodtech.tribes.location;
  * <p/>
  * Created 6/5/12 12:26 AM
  */
-public class GeoLocation
+
+
+
+public class GeoLocation extends CompoundSensor
 {
     private Long id;
+
+
+    private Sensor latitude;
+    private Sensor longitude;
+    private Sensor elevation;
+
+    public Long getId()
+    {
+        return id;
+    }
+
+    public void setId(Long id)
+    {
+        this.id = id;
+    }
+
+    public Sensor getLatitude()
+    {
+        return latitude;
+    }
+
+    public void setLatitude(Sensor latitude)
+    {
+        this.latitude = latitude;
+    }
+
+    public Sensor getLongitude()
+    {
+        return longitude;
+    }
+
+    public void setLongitude(Sensor longitude)
+    {
+        this.longitude = longitude;
+    }
+
+    public Sensor getElevation()
+    {
+        return elevation;
+    }
+
+    public void setElevation(Sensor elevation)
+    {
+        this.elevation = elevation;
+    }
+
 }

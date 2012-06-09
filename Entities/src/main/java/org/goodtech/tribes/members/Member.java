@@ -22,7 +22,7 @@ import java.util.List;
  */
 
 /**
- * A member is an external entity (a person or business) that acts as a member of a tribe.
+ * A member is an external entity (a person, business, a sensor, a device, etc) that acts as a member of a tribe.
  */
 public class Member
 {
@@ -30,8 +30,6 @@ public class Member
     private List<Tribe> tribeList;
 
     private String name;
-    private Long birthdate;
-    private Long sexId;
     private Persona persona;
 
     public Long getId()
@@ -42,5 +40,35 @@ public class Member
     public void setId(Long id)
     {
         this.id = id;
+    }
+
+    public List<Tribe> getTribeList()
+    {
+        return tribeList;
+    }
+
+    public void setTribeList(List<Tribe> tribeList)
+    {
+        this.tribeList = tribeList;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    public Persona getPersona()
+    {
+        return persona;
+    }
+
+    public void setPersona(Persona persona)
+    {
+        this.persona = persona;
     }
 }

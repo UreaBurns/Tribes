@@ -1,4 +1,12 @@
-package org.goodtech.tribes.tribes;
+package net.coreapi.api.server.services;
+
+import org.goodtech.tribes.members.Member;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 
 /**
  * Copyright (C) 2012 by Scott Byrns
@@ -13,34 +21,22 @@ package org.goodtech.tribes.tribes;
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  * <p/>
- * Created 6/5/12 12:21 AM
+ * Created 6/9/12 9:42 AM
  */
 
-/**
- * The role class represents a role that a member can fulfil within a tribe.
- */
-public class Role
+@Path("/spring-social")
+@Produces(MediaType.APPLICATION_JSON)
+public class SpringSocialService
 {
-    private Long id;
-    private String name;
 
-    public Long getId()
+    @GET
+    @Path("/get-with-id:{id}")
+    public APIResponse set (@PathParam("id") Long id)
     {
-        return id;
-    }
+        Member member = new Member();
+        member.setId(id);
 
-    public void setId(Long id)
-    {
-        this.id = id;
-    }
-
-    public String getName()
-    {
-        return name;
-    }
-
-    public void setName(String name)
-    {
-        this.name = name;
+        APIResponse apiResponse = new APIResponse(member, 200);
+        return apiResponse;
     }
 }

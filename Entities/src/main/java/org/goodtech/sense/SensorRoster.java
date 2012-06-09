@@ -1,4 +1,6 @@
-package org.goodtech.tribes.tribes;
+package org.goodtech.sense;
+
+import org.goodtech.tribes.members.Roster;
 
 /**
  * Copyright (C) 2012 by Scott Byrns
@@ -13,34 +15,9 @@ package org.goodtech.tribes.tribes;
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  * <p/>
- * Created 6/5/12 12:21 AM
+ * Created 6/9/12 11:34 AM
  */
-
-/**
- * The role class represents a role that a member can fulfil within a tribe.
- */
-public class Role
+public class SensorRoster extends Roster
 {
-    private Long id;
-    private String name;
 
-    public Long getId()
-    {
-        return id;
-    }
-
-    public void setId(Long id)
-    {
-        this.id = id;
-    }
-
-    public String getName()
-    {
-        return name;
-    }
-
-    public void setName(String name)
-    {
-        this.name = name;
-    }
 }
