@@ -2,6 +2,7 @@ package org.goodtech.tribes.members;
 
 import org.goodtech.tribes.tribes.Role;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -29,7 +30,7 @@ public class Roster
 {
     private Long id;
     private List<Member> memberList;
-    private Map<Member, Role> rolesMap;
+    private HashMap<Member, Role> rolesMap;
 
     /**
      * Get the ID of the roster.
@@ -76,7 +77,7 @@ public class Roster
      *
      * @return A list of members and the roles the fulfill.
      */
-    public Map<Member, Role> getRolesMap()
+    public HashMap<Member, Role> getRolesMap()
     {
         return rolesMap;
     }
@@ -86,7 +87,7 @@ public class Roster
      *
      * @param rolesMap A map of members and the roles they fulfill.
      */
-    public void setRolesMap(Map<Member, Role> rolesMap)
+    public void setRolesMap(HashMap<Member, Role> rolesMap)
     {
         this.rolesMap = rolesMap;
     }
