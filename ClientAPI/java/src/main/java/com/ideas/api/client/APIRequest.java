@@ -15,7 +15,7 @@ public class APIRequest
 
     public static final String JSON_DATA = "JSON_DATA";
 
-    private static final String baseRequestUrl = "http://localhost/SNAPSHOTS/scott/1%2E0%2E2%2DSNAPSHOT/";
+    private static final String baseRequestUrl = "http://coreapi.net:8080/SNAPSHOTS/scott/1%2E0%2E2%2DSNAPSHOT";
 
     private RequestType requestType;
     private Class requestEntityClass;

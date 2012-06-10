@@ -136,10 +136,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="21" selection-start="1836" selection-end="1836" vertical-scroll-proportion="0.9464286">
+            <state line="59" column="21" selection-start="1836" selection-end="1836" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -183,10 +183,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="APIRequest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="APIRequest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="66" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+            <state line="17" column="110" selection-start="410" selection-end="410" vertical-scroll-proportion="0.026785715">
               <folding />
             </state>
           </provider>
@@ -243,8 +243,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/ResponseStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java" />
       </list>
     </option>
   </component>
@@ -992,16 +992,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="66" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+        <state line="59" column="21" selection-start="1836" selection-end="1836" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="21" selection-start="1836" selection-end="1836" vertical-scroll-proportion="0.9464286">
+        <state line="17" column="110" selection-start="410" selection-end="410" vertical-scroll-proportion="0.026785715">
           <folding />
         </state>
       </provider>
