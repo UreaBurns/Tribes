@@ -165,10 +165,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestMembersService.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TestMembersService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMembersService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="44" selection-start="516" selection-end="516" vertical-scroll-proportion="0.48214287">
+            <state line="25" column="44" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -183,10 +183,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="APIRequest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="APIRequest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="94" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+            <state line="17" column="71" selection-start="371" selection-end="371" vertical-scroll-proportion="0.026785715">
               <folding />
             </state>
           </provider>
@@ -241,10 +241,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/TribeRolesMapDeserializerModule.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/ResponseStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java" />
       </list>
     </option>
   </component>
@@ -978,9 +978,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="94" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+        <state line="33" column="9" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1530#1538#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMembersService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="44" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -994,18 +1003,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersServices.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="9" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1530#1538#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMembersService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="44" selection-start="516" selection-end="516" vertical-scroll-proportion="0.48214287">
+        <state line="17" column="71" selection-start="371" selection-end="371" vertical-scroll-proportion="0.026785715">
           <folding />
         </state>
       </provider>
