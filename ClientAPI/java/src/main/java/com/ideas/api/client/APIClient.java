@@ -80,16 +80,21 @@ public class APIClient
             HttpEntity resEntity = response.getEntity();
 
             try {
+                String responseText = EntityUtils.toString(resEntity);
+                apiResponse = JSONObjectMapper.<APIResponse>mapJSONStringToEntity(responseText, APIResponse.class);
 
-                apiResponse = new APIResponse();
-                apiResponse.setRawResponseString(EntityUtils.toString(resEntity));
-                System.out.println(apiResponse.getRawResponseString());
+                apiResponse.setRawResponseString(responseText);
+
+//                System.out.println(apiResponse.getRawResponseString());
+
+                ResponseEntity responseEntity = (ResponseEntity)JSONObjectMapper.mapJSONNodeStringToEntity(responseText, "response", request.getRequestEntityClass());
                 apiResponse.setResponse(
-                        (ResponseEntity)JSONObjectMapper.mapJSONNodeStringToEntity(EntityUtils.toString(resEntity), "response", request.getRequestEntityClass())
+                        responseEntity
                                        );
 
             }
             catch (Throwable e) {
+                e.printStackTrace();
                 // NOP
             }
 

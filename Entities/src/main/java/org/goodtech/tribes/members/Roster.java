@@ -30,7 +30,7 @@ public class Roster
 {
     private Long id;
     private List<Member> memberList;
-    private HashMap<Member, Role> rolesMap;
+    private Map<Long, Role> rolesMap;
 
     /**
      * Get the ID of the roster.
@@ -77,7 +77,7 @@ public class Roster
      *
      * @return A list of members and the roles the fulfill.
      */
-    public HashMap<Member, Role> getRolesMap()
+    public Map<Long, Role> getRolesMap()
     {
         return rolesMap;
     }
@@ -87,7 +87,7 @@ public class Roster
      *
      * @param rolesMap A map of members and the roles they fulfill.
      */
-    public void setRolesMap(HashMap<Member, Role> rolesMap)
+    public void setRolesMap(HashMap<Long, Role> rolesMap)
     {
         this.rolesMap = rolesMap;
     }

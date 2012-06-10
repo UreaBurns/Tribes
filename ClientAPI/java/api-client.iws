@@ -71,20 +71,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMembersService.java" line="23" class="com.ideas.TestMembersService" package="com.ideas">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMembersService.java" line="24" class="com.ideas.TestMembersService" package="com.ideas">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java" line="90" class="com.ideas.api.client.APIClient" package="com.ideas.api.client">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -141,19 +128,18 @@
       <file leaf-file-name="MembersServices.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1564" selection-end="1564" vertical-scroll-proportion="0.0">
+            <state line="33" column="9" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#1530#1538#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="26" selection-start="899" selection-end="899" vertical-scroll-proportion="0.81983805">
+            <state line="27" column="26" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -162,9 +148,9 @@
       <file leaf-file-name="APIClient.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="39" selection-start="2643" selection-end="2643" vertical-scroll-proportion="0.0">
+            <state line="90" column="0" selection-start="2853" selection-end="2853" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2476#2489#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,13 +165,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestMembersService.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TestMembersService.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMembersService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="25" column="44" selection-start="516" selection-end="516" vertical-scroll-proportion="0.48214287">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -202,7 +186,7 @@
       <file leaf-file-name="APIRequest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="5" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0">
+            <state line="17" column="94" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -211,7 +195,7 @@
       <file leaf-file-name="MembersMethods.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersMethods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="818" selection-end="873" vertical-scroll-proportion="0.0">
+            <state line="19" column="31" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -220,10 +204,17 @@
       <file leaf-file-name="APIResponse.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="15" column="16" selection-start="334" selection-end="338" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponseStatus.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/ResponseStatus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="28" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -247,11 +238,13 @@
         <option value="$PROJECT_DIR$/src/test/java/com/ideas/TestIdeasService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ideas/TestMembersService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponseWrapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersServices.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/TribeRolesMapDeserializerModule.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/ResponseStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java" />
       </list>
     </option>
   </component>
@@ -325,17 +318,20 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
+      <pane id="PackagesPane">
+        <subPane>
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -476,6 +472,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Favorites" />
     </panes>
   </component>
@@ -491,9 +497,9 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -800,7 +806,7 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3986711" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39756367" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -809,8 +815,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36335784" sideWeight="0.6744186" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24938725" sideWeight="0.6013289" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24938725" sideWeight="0.6744186" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3255814" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -918,100 +924,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponseWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="32" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="37" column="32" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/goodtech/entities/1.0.1-SNAPSHOT/entities-1.0.1-SNAPSHOT.jar!/org/goodtech/tribes/members/Member.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="26" selection-start="450" selection-end="450" vertical-scroll-proportion="-7.2">
-          <folding />
-        </state>
+        <state line="13" column="26" selection-start="450" selection-end="450" vertical-scroll-proportion="-7.2" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/scottbyrns/utilities/json-object-mapper/1.1.0-SNAPSHOT/json-object-mapper-1.1.0-SNAPSHOT.jar!/com/scottbyrns/utilities/JSONObjectMapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="24" selection-start="695" selection-end="695" vertical-scroll-proportion="0.49342105">
-          <folding />
-        </state>
+        <state line="16" column="24" selection-start="695" selection-end="695" vertical-scroll-proportion="0.49342105" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponse.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/scottbyrns/utilities/json-object-mapper/1.1.1-SNAPSHOT/json-object-mapper-1.1.1-SNAPSHOT.jar!/com/scottbyrns/utilities/JSONObjectMapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="18" column="24" selection-start="933" selection-end="933" vertical-scroll-proportion="0.55921054" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atlassian-ide-plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="5" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersMethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="818" selection-end="873" vertical-scroll-proportion="0.0">
+        <state line="19" column="31" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="26" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/BaseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
+        <state line="16" column="19" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/ResponseStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="28" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/scottbyrns/utilities/json-object-mapper/1.1.1-SNAPSHOT/json-object-mapper-1.1.1-SNAPSHOT.jar!/com/scottbyrns/utilities/JSONObjectMapper.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="24" selection-start="933" selection-end="933" vertical-scroll-proportion="0.55921054">
+        <state line="15" column="16" selection-start="334" selection-end="338" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="94" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="39" selection-start="2643" selection-end="2643" vertical-scroll-proportion="0.0">
+        <state line="90" column="0" selection-start="2853" selection-end="2853" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMembersService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2476#2489#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1564" selection-end="1564" vertical-scroll-proportion="0.0">
+        <state line="33" column="9" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#1530#1538#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMembersService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="26" selection-start="899" selection-end="899" vertical-scroll-proportion="0.81983805">
+        <state line="25" column="44" selection-start="516" selection-end="516" vertical-scroll-proportion="0.48214287">
           <folding />
         </state>
       </provider>

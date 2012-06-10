@@ -7,7 +7,7 @@
     <groupId>net.coreapi</groupId>
     <packaging>war</packaging>
     <artifactId>ServerAPI</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
 
 
     <!-- Shared version number properties -->
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>org.goodtech</groupId>
             <artifactId>entities</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
+            <version>1.0.3-SNAPSHOT</version>
         </dependency>
 
         <!--
@@ -314,7 +314,7 @@
                     <url>http://coreapi.net/manager</url>
                     <port>80</port>
                     <!--SNAPSHOTS/${coreapi-net.deploy-path}-->
-                    <path>/</path>
+                    <path>/SNAPSHOTS/${coreapi-net.deploy-path}</path>
                     <warFile>${project.basedir}/target/${project.build.finalName}.war</warFile>
                 </configuration>
             </plugin>
