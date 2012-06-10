@@ -136,10 +136,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="26" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
+            <state line="59" column="21" selection-start="1836" selection-end="1836" vertical-scroll-proportion="0.9464286">
               <folding />
             </state>
           </provider>
@@ -183,10 +183,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="APIRequest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="APIRequest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="66" selection-start="366" selection-end="366" vertical-scroll-proportion="0.026785715">
+            <state line="17" column="66" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -240,11 +240,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponseWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/TribeRolesMapDeserializerModule.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/ResponseStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -338,10 +338,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="api-client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -952,13 +948,6 @@
         <state line="19" column="31" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="26" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/BaseService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="19" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" />
@@ -1005,7 +994,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="66" selection-start="366" selection-end="366" vertical-scroll-proportion="0.026785715">
+        <state line="17" column="66" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="21" selection-start="1836" selection-end="1836" vertical-scroll-proportion="0.9464286">
           <folding />
         </state>
       </provider>
