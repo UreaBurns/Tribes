@@ -30,8 +30,7 @@ import java.util.Map;
 public class Roster
 {
     private Long id;
-    private List<Member> memberList;
-    private Map<Member, NormalizedValue> memberRanking;
+    private List<RankedMember> rankedMemberList;
 
     /**
      * Get the ID of the roster.
@@ -53,33 +52,13 @@ public class Roster
         this.id = id;
     }
 
-    /**
-     * Get the list of members registered in the roster.
-     *
-     * @return A list of members registered in the roster.
-     */
-    public List<Member> getMemberList()
+    public List<RankedMember> getRankedMemberList()
     {
-        return memberList;
+        return rankedMemberList;
     }
 
-    /**
-     * Set the list of members registered in the roster.
-     *
-     * @param memberList The list of members registered in the roster.
-     */
-    public void setMemberList(List<Member> memberList)
+    public void setRankedMemberList(List<RankedMember> rankedMemberList)
     {
-        this.memberList = memberList;
-    }
-
-    public Map<Member, NormalizedValue> getMemberRanking()
-    {
-        return memberRanking;
-    }
-
-    public void setMemberRanking(Map<Member, NormalizedValue> memberRanking)
-    {
-        this.memberRanking = memberRanking;
+        this.rankedMemberList = rankedMemberList;
     }
 }
