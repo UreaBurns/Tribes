@@ -45,7 +45,7 @@ public class MemberService
     public APIResponse set (@PathParam("id") Long id)
     {
         Member member = new Member();
-        member.setId(12L);
+        member.setId(id);
 
 
         Persona persona = new Persona();

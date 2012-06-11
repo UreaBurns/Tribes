@@ -128,7 +128,7 @@
       <file leaf-file-name="MembersServices.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="25" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.0">
+            <state line="23" column="13" selection-start="948" selection-end="948" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#1530#1538#0" expanded="true" />
               </folding>
@@ -136,10 +136,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="26" selection-start="899" selection-end="899" vertical-scroll-proportion="0.72321427">
+            <state line="6" column="27" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -168,16 +168,16 @@
       <file leaf-file-name="TestMembersService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMembersService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="44" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
+            <state line="23" column="13" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseService.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BaseService.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/BaseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="19" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
+            <state line="16" column="19" selection-start="323" selection-end="323" vertical-scroll-proportion="0.4017857">
               <folding />
             </state>
           </provider>
@@ -186,7 +186,7 @@
       <file leaf-file-name="APIRequest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="110" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+            <state line="17" column="79" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -948,11 +948,6 @@
         <state line="19" column="31" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/ResponseStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="28" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
@@ -963,13 +958,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="16" selection-start="334" selection-end="338" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMembersService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="44" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -985,23 +973,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="110" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+        <state line="17" column="79" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="27" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMembersService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="13" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="25" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.0">
+        <state line="23" column="13" selection-start="948" selection-end="948" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#1530#1538#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/BaseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="26" selection-start="899" selection-end="899" vertical-scroll-proportion="0.72321427">
+        <state line="16" column="19" selection-start="323" selection-end="323" vertical-scroll-proportion="0.4017857">
           <folding />
         </state>
       </provider>
