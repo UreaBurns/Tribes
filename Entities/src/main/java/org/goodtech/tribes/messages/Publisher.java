@@ -13,39 +13,9 @@ package org.goodtech.tribes.messages;
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  * <p/>
- * Created 6/2/12 8:41 AM
+ * Created 6/11/12 1:00 PM
  */
-
-import org.goodtech.tribes.members.Member;
-
-import java.util.Map;
-
-/**
- * A message is a set of information that is passed from one entity (the creator/ sender)
- * to a target entity (consumer / receiver).
- */
-public class Message extends Document
+public interface Publisher
 {
-    private Member publisher;
-    private Member audience;
 
-    public Member getPublisher()
-    {
-        return publisher;
-    }
-
-    public void setPublisher(Member publisher)
-    {
-        this.publisher = publisher;
-    }
-
-    public Member getAudience()
-    {
-        return audience;
-    }
-
-    public void setAudience(Member audience)
-    {
-        this.audience = audience;
-    }
 }

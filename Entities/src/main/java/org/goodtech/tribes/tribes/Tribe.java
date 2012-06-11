@@ -1,5 +1,6 @@
 package org.goodtech.tribes.tribes;
 
+import org.goodtech.tribes.members.Member;
 import org.goodtech.tribes.members.Persona;
 import org.goodtech.tribes.ratings.Rateable;
 import org.goodtech.tribes.ratings.Rating;
@@ -28,11 +29,10 @@ import java.util.List;
 /**
  * A tribe is a grouping of a roster and a subject that can act as an individual entity.
  */
-public class Tribe
+public class Tribe extends Member
 {
     private String name;
     private String description;
-    private Persona subjectOfFocus;
     private Roster memberRoster;
 
     /**
@@ -73,26 +73,6 @@ public class Tribe
     public void setDescription(String description)
     {
         this.description = description;
-    }
-
-    /**
-     * Get the subject of focus for the tribe.
-     *
-     * @return The subject of focus for the tribe.
-     */
-    public Persona getSubjectOfFocus()
-    {
-        return subjectOfFocus;
-    }
-
-    /**
-     * Set the subject of focus for the tribe.
-     *
-     * @param subjectOfFocus The subject of focus for the tribe.
-     */
-    public void setSubjectOfFocus(Persona subjectOfFocus)
-    {
-        this.subjectOfFocus = subjectOfFocus;
     }
 
     /**

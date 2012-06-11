@@ -1,5 +1,6 @@
 package org.goodtech.tribes.messages;
 
+
 /**
  * Copyright (C) 2012 by Scott Byrns
  * http://github.com/scottbyrns
@@ -13,39 +14,41 @@ package org.goodtech.tribes.messages;
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  * <p/>
- * Created 6/2/12 8:41 AM
+ * Created 6/11/12 12:54 PM
  */
-
-import org.goodtech.tribes.members.Member;
-
-import java.util.Map;
-
-/**
- * A message is a set of information that is passed from one entity (the creator/ sender)
- * to a target entity (consumer / receiver).
- */
-public class Message extends Document
+public class OrderedElement
 {
-    private Member publisher;
-    private Member audience;
+    private long id;
+    private DocumentType elementType;
+    private String content;
 
-    public Member getPublisher()
+    public long getId()
     {
-        return publisher;
+        return id;
     }
 
-    public void setPublisher(Member publisher)
+    public void setId(long id)
     {
-        this.publisher = publisher;
+        this.id = id;
     }
 
-    public Member getAudience()
+    public DocumentType getElementType()
     {
-        return audience;
+        return elementType;
     }
 
-    public void setAudience(Member audience)
+    public void setElementType(DocumentType elementType)
     {
-        this.audience = audience;
+        this.elementType = elementType;
+    }
+
+    public String getContent()
+    {
+        return content;
+    }
+
+    public void setContent(String content)
+    {
+        this.content = content;
     }
 }
