@@ -150,10 +150,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestTribeService.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TestTribeService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestTribeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="28" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.59821427">
+            <state line="34" column="28" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,10 +170,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="APIRequest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="APIRequest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="81" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
+            <state line="18" column="52" selection-start="444" selection-end="444" vertical-scroll-proportion="0.05357143">
               <folding />
             </state>
           </provider>
@@ -217,12 +217,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/ResponseError.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ideas/TestMembersService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/TribeMethods.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/TribeServices.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ideas/TestTribeService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java" />
       </list>
     </option>
   </component>
@@ -930,13 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="81" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="96" column="0" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0">
@@ -1001,10 +994,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestTribeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="28" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.59821427">
+        <state line="34" column="28" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="52" selection-start="444" selection-end="444" vertical-scroll-proportion="0.05357143">
+          <folding />
         </state>
       </provider>
     </entry>
