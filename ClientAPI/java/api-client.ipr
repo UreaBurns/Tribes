@@ -349,15 +349,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.goodtech:entities:1.0.3-SNAPSHOT">
+    <library name="Maven: org.goodtech:entities:1.0.4-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/goodtech/entities/1.0.3-SNAPSHOT/entities-1.0.3-SNAPSHOT.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/goodtech/entities/1.0.4-SNAPSHOT/entities-1.0.4-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/goodtech/entities/1.0.3-SNAPSHOT/entities-1.0.3-SNAPSHOT-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/goodtech/entities/1.0.4-SNAPSHOT/entities-1.0.4-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/goodtech/entities/1.0.3-SNAPSHOT/entities-1.0.3-SNAPSHOT-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/goodtech/entities/1.0.4-SNAPSHOT/entities-1.0.4-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.json:json:20090211">

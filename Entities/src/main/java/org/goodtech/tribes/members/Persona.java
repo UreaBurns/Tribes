@@ -1,5 +1,8 @@
 package org.goodtech.tribes.members;
 
+import org.goodtech.statistics.NormalizedValue;
+import org.goodtech.tribes.tags.Tag;
+
 import java.util.List;
 import java.util.Map;
 
@@ -26,7 +29,14 @@ import java.util.Map;
 public class Persona
 {
     private Long id;
-    private List<Attribute> attributeList;
+
+    /**
+     * This application will use normalized values for the tags.
+     * Ultimately these normalized values will be driven by analysis
+     * of historic values from a data warehouse.
+     */
+    private List<Personification> personificationList;
+
 
     /**
      * Get the ID of the persona.
@@ -48,23 +58,13 @@ public class Persona
         this.id = id;
     }
 
-    /**
-     * Get the list of attributes personified by this persona.
-     *
-     * @return The list of attributes personified by this persona.
-     */
-    public List<Attribute> getAttributeList()
+    public List<Personification> getPersonificationList()
     {
-        return attributeList;
+        return personificationList;
     }
 
-    /**
-     * Set the list of attributes personified by this persona.
-     *
-     * @param attributeList The list of attributes personified by this persona.
-     */
-    public void setAttributeList(List<Attribute> attributeList)
+    public void setPersonificationList(List<Personification> personificationList)
     {
-        this.attributeList = attributeList;
+        this.personificationList = personificationList;
     }
 }

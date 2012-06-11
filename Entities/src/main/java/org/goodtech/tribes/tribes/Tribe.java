@@ -1,5 +1,6 @@
 package org.goodtech.tribes.tribes;
 
+import org.goodtech.tribes.members.Persona;
 import org.goodtech.tribes.ratings.Rateable;
 import org.goodtech.tribes.ratings.Rating;
 import org.goodtech.tribes.members.Roster;
@@ -31,7 +32,7 @@ public class Tribe
 {
     private String name;
     private String description;
-    private Subject subjectOfFocus;
+    private Persona subjectOfFocus;
     private Roster memberRoster;
 
     /**
@@ -79,7 +80,7 @@ public class Tribe
      *
      * @return The subject of focus for the tribe.
      */
-    public Subject getSubjectOfFocus()
+    public Persona getSubjectOfFocus()
     {
         return subjectOfFocus;
     }
@@ -89,7 +90,7 @@ public class Tribe
      *
      * @param subjectOfFocus The subject of focus for the tribe.
      */
-    public void setSubjectOfFocus(Subject subjectOfFocus)
+    public void setSubjectOfFocus(Persona subjectOfFocus)
     {
         this.subjectOfFocus = subjectOfFocus;
     }

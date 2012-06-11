@@ -1,9 +1,4 @@
-package org.goodtech.tribes.members;
-
-import org.goodtech.tribes.location.GeoLocation;
-import org.goodtech.tribes.tribes.Tribe;
-
-import java.util.List;
+package org.goodtech.statistics;
 
 /**
  * Copyright (C) 2012 by Scott Byrns
@@ -18,34 +13,19 @@ import java.util.List;
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  * <p/>
- * Created 6/5/12 12:19 AM
+ * Created 6/10/12 3:57 PM
  */
-
-/**
- * A member is an external entity (a person, business, a sensor, a device, etc) that acts as a member of a tribe.
- */
-public class Member
+public class NormalizedValue
 {
-    private Long id;
-    private Persona persona;
+    private double value;
 
-    public Long getId()
+    public double getValue()
     {
-        return id;
+        return value;
     }
 
-    public void setId(Long id)
+    public void setValue(double value)
     {
-        this.id = id;
-    }
-
-    public Persona getPersona()
-    {
-        return persona;
-    }
-
-    public void setPersona(Persona persona)
-    {
-        this.persona = persona;
+        this.value = value;
     }
 }

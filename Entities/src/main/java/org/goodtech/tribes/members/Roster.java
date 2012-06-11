@@ -1,5 +1,6 @@
 package org.goodtech.tribes.members;
 
+import org.goodtech.statistics.NormalizedValue;
 import org.goodtech.tribes.tribes.Role;
 
 import java.util.HashMap;
@@ -30,7 +31,7 @@ public class Roster
 {
     private Long id;
     private List<Member> memberList;
-    private Map<Long, Role> rolesMap;
+    private Map<Member, NormalizedValue> memberRanking;
 
     /**
      * Get the ID of the roster.
@@ -72,23 +73,13 @@ public class Roster
         this.memberList = memberList;
     }
 
-    /**
-     * Get a map of members and the roles they fulfill.
-     *
-     * @return A list of members and the roles the fulfill.
-     */
-    public Map<Long, Role> getRolesMap()
+    public Map<Member, NormalizedValue> getMemberRanking()
     {
-        return rolesMap;
+        return memberRanking;
     }
 
-    /**
-     * Set the a map of members and the roles they fulfill.
-     *
-     * @param rolesMap A map of members and the roles they fulfill.
-     */
-    public void setRolesMap(HashMap<Long, Role> rolesMap)
+    public void setMemberRanking(Map<Member, NormalizedValue> memberRanking)
     {
-        this.rolesMap = rolesMap;
+        this.memberRanking = memberRanking;
     }
 }

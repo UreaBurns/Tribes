@@ -1,6 +1,5 @@
 package org.goodtech.sense;
 
-import org.goodtech.tribes.members.Attribute;
 import org.goodtech.tribes.members.Member;
 import org.goodtech.tribes.members.Persona;
 
@@ -21,5 +20,5 @@ import org.goodtech.tribes.members.Persona;
  */
 public class Sensor extends Member
 {
-    private Attribute attribute;
+
 }
