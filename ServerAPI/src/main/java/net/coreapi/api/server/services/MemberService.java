@@ -4,6 +4,7 @@ import net.coreapi.dao.LocationDAO;
 import org.apache.cxf.jaxrs.ext.MessageContext;
 import org.goodtech.statistics.NormalizedValue;
 import org.goodtech.tribes.members.Member;
+import org.goodtech.tribes.members.Person;
 import org.goodtech.tribes.members.Persona;
 import org.goodtech.tribes.members.Personification;
 import org.goodtech.tribes.tags.Tag;
@@ -40,9 +41,12 @@ import java.util.List;
 public class MemberService
 {
 
+    @Context
+    private MessageContext context;
+
     @GET
     @Path("/get-with-id:{id}")
-    public APIResponse set (@PathParam("id") Long id)
+    public APIResponse getWithId (@PathParam("id") Long id)
     {
         Member member = new Member();
         member.setId(id);
@@ -73,6 +77,54 @@ public class MemberService
 
         APIResponse apiResponse = new APIResponse(member, 200);
         return apiResponse;
+    }
+
+    @GET
+    @Path("/get-member-of-type:{type}-with-id:{id}")
+    public APIResponse getMemberOfTypeWithId (@PathParam("id") Long id, @PathParam("type") String type)
+    {
+
+        Persona persona = new Persona();
+        LinkedHashMap<Tag, NormalizedValue> tagMap = new LinkedHashMap<Tag, NormalizedValue>();
+
+        Tag tag = new Tag();
+        tag.setId(1L);
+        tag.setLabel("TestLabel");
+
+        NormalizedValue normalizedValue = new NormalizedValue();
+        normalizedValue.setValue(0.4);
+
+        tagMap.put(tag, normalizedValue);
+
+        List<Personification> personificationList = new ArrayList<Personification>();
+        Personification personification = new Personification();
+        personification.setTag(tag);
+        personification.setNormalizedValue(normalizedValue);
+        personificationList.add(personification);
+
+        persona.setId(1L);
+        persona.setPersonificationList(personificationList);
+
+
+        APIResponse apiResponse;
+
+        if (type == "person") {
+            Person person = new Person();
+            person.setId(id);
+            person.setPersona(persona);
+
+            apiResponse = new APIResponse(person, 200);
+        }
+        else {
+            Member member = new Member();
+            member.setId(id);
+            member.setPersona(persona);
+
+            apiResponse = new APIResponse(member, 200);
+        }
+
+        return apiResponse;
+
     }
 
 }

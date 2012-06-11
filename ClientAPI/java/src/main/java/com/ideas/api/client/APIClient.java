@@ -1,5 +1,6 @@
 package com.ideas.api.client;
 
+import com.ideas.api.client.services.ResponseError;
 import com.scottbyrns.utilities.JSONObjectMapper;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -81,6 +82,11 @@ public class APIClient
 
             try {
                 String responseText = EntityUtils.toString(resEntity);
+
+                if (null == responseText || responseText.isEmpty()) {
+                    responseText = "{\"status\":404, \"response\":{\"message\":\"Resource not found.\"}}";
+                }
+
                 apiResponse = JSONObjectMapper.<APIResponse>mapJSONStringToEntity(responseText, APIResponse.class);
 
                 apiResponse.setRawResponseString(responseText);
@@ -91,7 +97,12 @@ public class APIClient
                 apiResponse.setResponse(
                         responseEntity
                                        );
-
+                try {
+                    handleResponseCode(apiResponse);
+                }
+                catch (ResponseError e) {
+                    e.printStackTrace();
+                }
             }
             catch (Throwable e) {
                 e.printStackTrace();
@@ -101,6 +112,13 @@ public class APIClient
         }
 
         return apiResponse;
+    }
+
+    private void handleResponseCode (APIResponse apiResponse) throws ResponseError
+    {
+        if (apiResponse.getStatus() != 200) {
+            throw new ResponseError(apiResponse.getStatus() + "");
+        }
     }
 
     /**

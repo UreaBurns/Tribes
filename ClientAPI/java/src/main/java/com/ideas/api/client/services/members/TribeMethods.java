@@ -13,11 +13,9 @@ package com.ideas.api.client.services.members;
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  * <p/>
- * Created 6/9/12 4:16 PM
+ * Created 6/11/12 12:14 PM
  */
-public class MembersMethods
+public class TribeMethods
 {
-    public static final String GET = "/members/get-with-id:{$id}";
-    public static final String GET_MEMBER_OF_TYPE = "/members/get-member-of-type:{$type}-with-id:{$id}";
-//    public static final String CREATE = "/idea/create";
+    public static final String GET_WITH_ID = "/tribe/get-with-id:{$id}";
 }

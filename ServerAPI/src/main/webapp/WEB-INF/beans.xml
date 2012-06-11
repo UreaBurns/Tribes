@@ -36,6 +36,7 @@
             <ref bean="healthService" />
             <ref bean="webViewService" />
             <ref bean="memberService" />
+            <ref bean="tribeService" />
         </jaxrs:serviceBeans>
         <jaxrs:providers>
             <bean id="apiResponseMessageBodyWriter" class="net.coreapi.api.server.APIResponseMessageBodyWriter" />
@@ -45,6 +46,7 @@
     <bean id="healthService" class="net.coreapi.api.server.services.HealthService"></bean>
     <bean id="webViewService" class="net.coreapi.api.server.services.WebViewService"></bean>
     <bean id="memberService" class="net.coreapi.api.server.services.MemberService"></bean>
+    <bean id="tribeService" class="net.coreapi.api.server.services.TribeService"></bean>
 
 
 
