@@ -112,12 +112,8 @@ public class TribeService extends BaseService
 
         tribe.setMemberRoster(roster);
 
-
-
-
         APIResponse apiResponse;
-        apiResponse = new APIResponse(tribe,
-                                      200);
+        apiResponse = new APIResponse(tribe, 200);
 
 
         return apiResponse;

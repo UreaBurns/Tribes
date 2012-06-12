@@ -32,9 +32,9 @@ public class TestMessageService
     {
         MessageServices services = new MessageServices();
 
-        Message message = services.getLatestMessageForMemberWithId(12L);
+        Message message = services.getLatestMessageForMemberWithId(13L);
 
-        assertEquals(message.getDestination().getId(), (Long)12L);
+        assertEquals(message.getDestination().getId(), (Long)13L);
 
     }
 

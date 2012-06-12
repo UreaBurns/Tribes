@@ -30,6 +30,12 @@
     <dependencies>
 
         <dependency>
+            <groupId>com.ideas</groupId>
+            <artifactId>api-client</artifactId>
+            <version>1.0.3-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.goodtech</groupId>
             <artifactId>entities</artifactId>
             <version>1.0.8-SNAPSHOT</version>

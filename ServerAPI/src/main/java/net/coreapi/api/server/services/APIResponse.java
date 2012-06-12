@@ -22,13 +22,6 @@ public class APIResponse
 {
     private int status = 200;
     private Object response;
-//    private Map<String, Object> data = new HashMap<String, Object>();
-//
-//    public APIResponse addReturnValue (String key, Object value) {
-//        data.put(key, value);
-//        return this;
-//    }
-
 
     public APIResponse()
     {

@@ -15,6 +15,11 @@ package net.coreapi.api.server.services;
  * <p/>
  * Created 5/16/12 10:03 PM
  */
+@Deprecated
+/**
+ * @deprecated Use APIException instead. Or create an APIError object.
+ * THis could maybe also be a more generic status wrapper...
+ */
 public class APIErrors
 {
     public static final String INTERNAL_ERROR = "{\"status\":\"500\"}";
