@@ -110,17 +110,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestTribeService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestTribeService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="1088" selection-end="1309" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -130,10 +119,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="APIRequest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="APIRequest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="53" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
+            <state line="19" column="53" selection-start="478" selection-end="478" vertical-scroll-proportion="0.375">
               <folding />
             </state>
           </provider>
@@ -150,13 +139,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestMessageService.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TestMessageService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMessageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="91" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.70535713">
+            <state line="45" column="91" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="APIResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="13" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -222,9 +220,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/ideas/TestTribeService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageServices.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageMethods.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ideas/TestMessageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java" />
       </list>
     </option>
   </component>
@@ -888,13 +886,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/goodtech/entities/1.0.4-SNAPSHOT/entities-1.0.4-SNAPSHOT.jar!/org/goodtech/tribes/members/Member.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="47" selection-start="497" selection-end="497" vertical-scroll-proportion="0.39252338">
@@ -971,13 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="53" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="119" column="0" selection-start="3722" selection-end="3722" vertical-scroll-proportion="0.0">
@@ -1005,10 +989,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMessageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="91" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.70535713">
+        <state line="45" column="91" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="53" selection-start="478" selection-end="478" vertical-scroll-proportion="0.375">
+          <folding />
         </state>
       </provider>
     </entry>

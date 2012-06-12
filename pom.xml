@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.coreapi</groupId>
+    <artifactId>Tribes</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+
+
+    <!-- Shared version number properties -->
+    <properties>
+
+        <org.springframework.version>3.0.5.RELEASE</org.springframework.version>
+
+        <persistence.version>1.0.0-SNAPSHOT</persistence.version>
+        <coreapi-net.deploy-path>stage</coreapi-net.deploy-path>
+		<coreapi-net.server-path></coreapi-net.server-path>
+    </properties>
+
+</project>
