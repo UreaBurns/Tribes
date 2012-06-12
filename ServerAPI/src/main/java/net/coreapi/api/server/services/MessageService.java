@@ -1,14 +1,12 @@
 package net.coreapi.api.server.services;
 
+import antlr.debug.MessageListener;
 import com.mongodb.*;
 import com.mongodb.util.JSON;
 import com.scottbyrns.utilities.JSONObjectMapper;
 import net.coreapi.mongo.documents.MessageDAO;
 import org.goodtech.tribes.members.Member;
-import org.goodtech.tribes.messages.Document;
-import org.goodtech.tribes.messages.DocumentType;
-import org.goodtech.tribes.messages.Message;
-import org.goodtech.tribes.messages.Raw;
+import org.goodtech.tribes.messages.*;
 import org.goodtech.tribes.tribes.Tribe;
 
 import javax.ws.rs.GET;
@@ -66,7 +64,7 @@ public class MessageService extends BaseService
     public APIResponse getAllMessagesForMemberById (@PathParam("id") Long id)
     {
         MessageDAO messageDAO = new MessageDAO();
-        List<Message> message = null;
+        MessageList message = null;
         try {
             message = messageDAO.getMessagesForMember(id);
             return new APIResponse(message, 200);
@@ -98,7 +96,7 @@ public class MessageService extends BaseService
         raw.setId(312);
         raw.setData("Golf club meetup tuesday!");
 
-        message.setContent(raw);
+        message.setRaw(raw);
 
         DocumentType documentType = new DocumentType();
         documentType.setId(7);
@@ -116,7 +114,7 @@ public class MessageService extends BaseService
         raw = new Raw();
         raw.setId(12312);
         raw.setData("3:30PM Tuesday");
-        document.setContent(raw);
+        document.setRaw(raw);
         document.setId(23122);
 
         List<Document> documentList = new ArrayList<Document>();

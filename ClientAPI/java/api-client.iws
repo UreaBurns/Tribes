@@ -99,15 +99,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestMembersService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMembersService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="750" selection-end="1103" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TribeServices.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/TribeServices.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -139,19 +130,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="APIRequest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="APIRequest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="18" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.29464287">
+            <state line="19" column="53" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestMessageService.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="APIClient.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="119" column="0" selection-start="3722" selection-end="3722" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#2725#2738#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestMessageService.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMessageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="42" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.0">
+            <state line="45" column="91" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.70535713">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,7 +173,7 @@
       <file leaf-file-name="MessageServices.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="50" selection-start="1049" selection-end="1080" vertical-scroll-proportion="0.0">
+            <state line="44" column="22" selection-start="1670" selection-end="1670" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,7 +184,7 @@
       <file leaf-file-name="MessageMethods.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageMethods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="58" selection-start="781" selection-end="808" vertical-scroll-proportion="0.0">
+            <state line="20" column="76" selection-start="943" selection-end="943" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -218,11 +220,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/TribeMethods.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/TribeServices.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ideas/TestTribeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageMethods.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageServices.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ideas/TestMessageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageMethods.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ideas/TestMessageService.java" />
       </list>
     </option>
   </component>
@@ -481,29 +483,7 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestMessageService.testGetWithId">
-    <configuration default="false" name="TestLikeService" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="api-client" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ideas" />
-      <option name="MAIN_CLASS_NAME" value="com.ideas.TestLikeService" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestMessageService.testGetAllMessagesForMemberWithId">
     <configuration default="false" name="TestMembersService.testGetWithId" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="api-client" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -589,6 +569,28 @@
       <option name="PACKAGE_NAME" value="com.ideas" />
       <option name="MAIN_CLASS_NAME" value="com.ideas.TestMessageService" />
       <option name="METHOD_NAME" value="testGetWithId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestMessageService.testGetAllMessagesForMemberWithId" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="api-client" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ideas" />
+      <option name="MAIN_CLASS_NAME" value="com.ideas.TestMessageService" />
+      <option name="METHOD_NAME" value="testGetAllMessagesForMemberWithId" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -730,11 +732,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestLikeService" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestMembersService.testGetWithId" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestMembersService.testGetMemberOfTypeWithId" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestTribeService.testGetWithId" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestMessageService.testGetWithId" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestMembersService.testGetWithId" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestMembersService.testGetMemberOfTypeWithId" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestTribeService.testGetWithId" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestMessageService.testGetWithId" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestMessageService.testGetAllMessagesForMemberWithId" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -784,7 +786,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36335784" sideWeight="0.6744186" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24938725" sideWeight="0.6744186" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24938725" sideWeight="0.6744186" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3255814" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -828,7 +830,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
@@ -900,15 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#2725#2738#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/ResponseError.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="5" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0">
@@ -964,22 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="58" selection-start="781" selection-end="808" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="50" selection-start="1049" selection-end="1080" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/atlassian-ide-plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -994,19 +971,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMessageService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="42" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.0">
+        <state line="19" column="53" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="0" selection-start="3722" selection-end="3722" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#2725#2738#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="22" selection-start="1670" selection-end="1670" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageMethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="18" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.29464287">
+        <state line="20" column="76" selection-start="943" selection-end="943" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="91" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.70535713">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

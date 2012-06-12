@@ -5,7 +5,10 @@ import com.ideas.api.client.APIResponse;
 import com.ideas.api.client.RequestType;
 import com.ideas.api.client.services.BaseService;
 import org.goodtech.tribes.messages.Message;
+import org.goodtech.tribes.messages.MessageList;
 import org.goodtech.tribes.tribes.Tribe;
+
+import java.util.List;
 
 /**
  * Copyright (C) 2012 by Scott Byrns
@@ -31,13 +34,28 @@ public class MessageServices extends BaseService
         apiRequest.setRequestType(RequestType.GET);
         apiRequest.setRequestUrl(MessageMethods.GET_LATEST_FOR_MEMBER_BY_ID);
         apiRequest.setRequestEntityClass(Message.class);
-        apiRequest.addRequestParameter(
-                "id",
-                Long.toString(id)
-        );
+        apiRequest.addRequestParameter("id",
+                                       Long.toString(id));
 
         APIResponse apiResponse = getAPIClient().makeRequest(apiRequest);
 
-        return (Message)apiResponse.getResponse();
+        return (Message) apiResponse.getResponse();
     }
+
+    public MessageList getAllMessagesForMemberWithId(long id)
+    {
+        APIRequest apiRequest = createAPIRequest();
+        apiRequest.setRequestType(RequestType.GET);
+        apiRequest.setRequestUrl(MessageMethods.GET_ALL_MESSAGES_FOR_MEMBER_BY_ID);
+
+        apiRequest.setRequestEntityClass(MessageList.class);
+
+        apiRequest.addRequestParameter("id", Long.toString(id));
+
+        APIResponse apiResponse = getAPIClient().makeRequest(apiRequest);
+
+        return (MessageList) apiResponse.getResponse();
+
+    }
+    ///get-all-messages-for-member-with-id:{id}
 }

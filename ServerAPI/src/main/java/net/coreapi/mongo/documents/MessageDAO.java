@@ -11,6 +11,7 @@ import com.scottbyrns.utilities.JSONObjectMapper;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.goodtech.tribes.members.Member;
 import org.goodtech.tribes.messages.Message;
+import org.goodtech.tribes.messages.MessageList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,13 +72,14 @@ public class MessageDAO
         throw new Exception("No record found.");
     }
 
-    public List<Message> getMessagesForMember (long id) throws Exception {
+    public MessageList getMessagesForMember (long id) throws Exception {
         DBCollection dbCollection = ManagedMongoDriver.getInstance().getCollection(DATABASE_NAME, COLLECTION_NAME);
         BasicDBObject query = new BasicDBObject();
         BasicDBObject field = new BasicDBObject();
         field.put("destination.id", id);
 
-        List<Message> messageList = new ArrayList<Message>();
+        MessageList messageList = new MessageList();
+        messageList.setMessageList(new ArrayList<Message>());
 
 
         DBCursor cursor = dbCollection.find(field);
@@ -85,7 +87,7 @@ public class MessageDAO
             try {
                 DBObject dbObject = cursor.next();
                 Message message = JSONObjectMapper.mapJSONStringToEntity(dbObject.toString(), Message.class);
-                messageList.add(message);
+                messageList.getMessageList().add(message);
 //                return message;
             }
             catch (InvalidJSONStringException e) {

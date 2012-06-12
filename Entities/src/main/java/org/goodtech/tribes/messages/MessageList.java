@@ -1,4 +1,6 @@
-package com.ideas.api.client.services.members;
+package org.goodtech.tribes.messages;
+
+import java.util.List;
 
 /**
  * Copyright (C) 2012 by Scott Byrns
@@ -13,10 +15,19 @@ package com.ideas.api.client.services.members;
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  * <p/>
- * Created 6/11/12 1:22 PM
+ * Created 6/11/12 11:00 PM
  */
-public class MessageMethods
+public class MessageList
 {
-    public static final String GET_LATEST_FOR_MEMBER_BY_ID = "/message/get-latest-message-for-member-with-id:{$id}";
-    public static final String GET_ALL_MESSAGES_FOR_MEMBER_BY_ID = "/message/get-all-messages-for-member-with-id:{$id}";
+    private List<Message> messageList;
+
+    public List<Message> getMessageList()
+    {
+        return messageList;
+    }
+
+    public void setMessageList(List<Message> messageList)
+    {
+        this.messageList = messageList;
+    }
 }

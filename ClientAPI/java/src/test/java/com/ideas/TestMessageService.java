@@ -3,6 +3,7 @@ package com.ideas;
 import com.ideas.api.client.services.members.MessageServices;
 import com.ideas.api.client.services.members.TribeServices;
 import org.goodtech.tribes.messages.Message;
+import org.goodtech.tribes.messages.MessageList;
 import org.goodtech.tribes.tribes.Tribe;
 import org.junit.Test;
 
@@ -33,7 +34,16 @@ public class TestMessageService
 
         Message message = services.getLatestMessageForMemberWithId(12L);
 
-        assertEquals(message.getAudience().getId(), (Long)12L);
+        assertEquals(message.getDestination().getId(), (Long)12L);
+
+    }
+
+    @Test
+    public void testGetAllMessagesForMemberWithId () {
+        MessageServices services = new MessageServices();
+        MessageList messageList = services.getAllMessagesForMemberWithId(13L);
+
+        assertEquals(messageList.getMessageList().get(0).getDestination().getId(), (Long)13L);
 
     }
 
