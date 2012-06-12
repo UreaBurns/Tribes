@@ -1,6 +1,12 @@
-package org.goodtech.tribes.messages;
+package net.coreapi.mongo.documents;
 
-import java.util.List;
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
+import com.mongodb.ReflectionDBObject;
+import org.goodtech.tribes.messages.Message;
+
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Copyright (C) 2012 by Scott Byrns
@@ -15,19 +21,9 @@ import java.util.List;
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  * <p/>
- * Created 6/11/12 12:53 PM
+ * Created 6/11/12 3:37 PM
  */
-public class Document extends OrderedElement
+public class MessageDocumentEntity extends ReflectionDBObject
 {
-    private List<Document> orderedElements;
 
-    public List<Document> getOrderedElements()
-    {
-        return orderedElements;
-    }
-
-    public void setOrderedElements(List<Document> orderedElements)
-    {
-        this.orderedElements = orderedElements;
-    }
 }

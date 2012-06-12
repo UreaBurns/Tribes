@@ -38,7 +38,7 @@ import java.util.List;
 
 @Path("/members")
 @Produces(MediaType.APPLICATION_JSON)
-public class MemberService
+public class MemberService extends BaseService
 {
 
     @Context

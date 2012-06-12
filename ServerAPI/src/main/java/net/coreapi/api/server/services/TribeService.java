@@ -77,10 +77,7 @@ public class TribeService extends BaseService
         persona.setId(1L);
         persona.setPersonificationList(personificationList);
 
-        tribe.setSubjectOfFocus(persona);
-
-
-
+        tribe.setPersona(persona);
 
 
 

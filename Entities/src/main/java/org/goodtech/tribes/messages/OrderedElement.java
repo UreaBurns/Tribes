@@ -1,6 +1,8 @@
 package org.goodtech.tribes.messages;
 
 
+import org.goodtech.statistics.NormalizedValue;
+
 /**
  * Copyright (C) 2012 by Scott Byrns
  * http://github.com/scottbyrns
@@ -20,7 +22,8 @@ public class OrderedElement
 {
     private long id;
     private DocumentType elementType;
-    private String content;
+    private NormalizedValue normalizedValue;
+    private Raw raw;
 
     public long getId()
     {
@@ -42,13 +45,23 @@ public class OrderedElement
         this.elementType = elementType;
     }
 
-    public String getContent()
+    public NormalizedValue getNormalizedValue()
     {
-        return content;
+        return normalizedValue;
     }
 
-    public void setContent(String content)
+    public void setNormalizedValue(NormalizedValue normalizedValue)
     {
-        this.content = content;
+        this.normalizedValue = normalizedValue;
+    }
+
+    public Raw getRaw()
+    {
+        return raw;
+    }
+
+    public void setRaw(Raw raw)
+    {
+        this.raw = raw;
     }
 }

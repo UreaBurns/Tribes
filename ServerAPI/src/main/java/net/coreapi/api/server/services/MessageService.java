@@ -1,9 +1,14 @@
 package net.coreapi.api.server.services;
 
+import com.mongodb.*;
+import com.mongodb.util.JSON;
+import com.scottbyrns.utilities.JSONObjectMapper;
+import net.coreapi.mongo.documents.MessageDAO;
 import org.goodtech.tribes.members.Member;
 import org.goodtech.tribes.messages.Document;
 import org.goodtech.tribes.messages.DocumentType;
 import org.goodtech.tribes.messages.Message;
+import org.goodtech.tribes.messages.Raw;
 import org.goodtech.tribes.tribes.Tribe;
 
 import javax.ws.rs.GET;
@@ -13,6 +18,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.xml.ws.handler.MessageContext;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,7 +40,7 @@ import java.util.List;
 
 @Path("/message")
 @Produces(MediaType.APPLICATION_JSON)
-public class MessageService
+public class MessageService extends BaseService
 {
 
     @Context
@@ -43,6 +49,36 @@ public class MessageService
     @GET
     @Path("/get-latest-message-for-member-with-id:{id}")
     public APIResponse getWithId (@PathParam("id") Long id)
+    {
+        MessageDAO messageDAO = new MessageDAO();
+        Message message = null;
+        try {
+            message = messageDAO.getMessageById(id);
+            return new APIResponse(message, 200);
+        }
+        catch (Exception e) {
+            return createErrorResponse(500, "Your message was not found.");
+        }
+    }
+
+    @GET
+    @Path("/get-all-messages-for-member-with-id:{id}")
+    public APIResponse getAllMessagesForMemberById (@PathParam("id") Long id)
+    {
+        MessageDAO messageDAO = new MessageDAO();
+        List<Message> message = null;
+        try {
+            message = messageDAO.getMessagesForMember(id);
+            return new APIResponse(message, 200);
+        }
+        catch (Exception e) {
+            return createErrorResponse(500, "Your message was not found.");
+        }
+    }
+
+    @GET
+    @Path("/send-message-to-member-with-id:{id}")
+    public APIResponse sendMessage (@PathParam("id") Long id)
     {
 
         Member member = new Member();
@@ -54,23 +90,33 @@ public class MessageService
         tribe.setId(123L);
 
         Message message = new Message();
-        message.setAudience(member);
-        message.setPublisher(tribe);
-        message.setContent("Golf club meetup tuesday!");
+        message.setId(id);
+        message.setSource(tribe);
+        message.setDestination(member);
+
+        Raw raw = new Raw();
+        raw.setId(312);
+        raw.setData("Golf club meetup tuesday!");
+
+        message.setContent(raw);
 
         DocumentType documentType = new DocumentType();
         documentType.setId(7);
         documentType.setName("Group Event");
 
-        message.setDocumentType(documentType);
+        message.setElementType(documentType);
+
 
         DocumentType timeDocument = new DocumentType();
         timeDocument.setId(4);
         timeDocument.setName("Date and Time");
 
         Document document = new Document();
-        document.setDocumentType(timeDocument);
-        document.setContent("3:30PM Tuesday");
+        document.setElementType(timeDocument);
+        raw = new Raw();
+        raw.setId(12312);
+        raw.setData("3:30PM Tuesday");
+        document.setContent(raw);
         document.setId(23122);
 
         List<Document> documentList = new ArrayList<Document>();
@@ -78,9 +124,19 @@ public class MessageService
 
         message.setOrderedElements(documentList);
 
+        MessageDAO messageDAO = new MessageDAO();
 
-        APIResponse apiResponse = new APIResponse(message, 200);
-        return apiResponse;
+        try {
+            messageDAO.sendMessage(message);
+            return new APIResponse(message, 200);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            return createErrorResponse(500, "Your message was not sent.");
+        }
+
+//        APIResponse apiResponse = new APIResponse(message, 200);
+//        return apiResponse;
     }
 
 }

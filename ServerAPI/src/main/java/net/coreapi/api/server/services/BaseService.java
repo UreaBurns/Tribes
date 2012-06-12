@@ -37,6 +37,16 @@ public abstract class BaseService
         return getMethodsThroughReflection();
     }
 
+    protected APIResponse createErrorResponse(int status, String messag) {
+        APIResponse apiResponse = new APIResponse();
+        apiResponse.setStatus(status);
+        APIException apiException = new APIException();
+        apiException.setErrorMessage(messag);
+        apiResponse.setData(apiException);
+
+        return apiResponse;
+    }
+
     /**
      * Get all of the Path interfaces for class methods.
      *
