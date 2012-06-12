@@ -75,8 +75,8 @@ public class MessageService extends BaseService
     }
 
     @GET
-    @Path("/send-message-to-member-with-id:{id}")
-    public APIResponse sendMessageToMemberWithId (@PathParam("id") Long id)
+    @Path("/send-message-to-member-with-id:{mid}")
+    public APIResponse sendMessageToMemberWithId (@PathParam("mid") Long id)
     {
 
         Member member = new Member();
@@ -132,9 +132,6 @@ public class MessageService extends BaseService
             e.printStackTrace();
             return createErrorResponse(500, "Your message was not sent.");
         }
-
-//        APIResponse apiResponse = new APIResponse(message, 200);
-//        return apiResponse;
     }
 
 }

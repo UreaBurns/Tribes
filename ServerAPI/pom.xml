@@ -15,7 +15,7 @@
     <groupId>net.coreapi</groupId>
     <packaging>war</packaging>
     <artifactId>ServerAPI</artifactId>
-    <version>1.0.4-SNAPSHOT</version>
+    <version>1.0.5-SNAPSHOT</version>
 
 
     <!-- Shared version number properties -->
