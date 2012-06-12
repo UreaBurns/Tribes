@@ -24,11 +24,11 @@ import javax.ws.rs.core.MediaType;
 @Produces(MediaType.TEXT_HTML)
 public class WebViewService
 {
-
     @GET
     @Path("/")
     public String homepage ()
     {
         return "Welcome to CoreAPI.net";
     }
+
 }

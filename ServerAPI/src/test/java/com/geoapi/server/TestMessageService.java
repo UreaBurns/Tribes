@@ -33,7 +33,6 @@ public class TestMessageService
         MessageService messageService = new MessageService();
         APIResponse apiResponse = messageService.getWithId(13L);
 
-
         try {
             String messageJSONString = apiResponse.toResponseString();
             Message message = JSONObjectMapper.mapJSONNodeStringToEntity(messageJSONString, "response", Message.class);

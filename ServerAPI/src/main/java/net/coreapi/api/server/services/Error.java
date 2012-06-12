@@ -15,6 +15,7 @@ package net.coreapi.api.server.services;
  * <p/>
  * Created 5/16/12 10:09 PM
  */
+@Deprecated
 public class Error
 {
     private String message;

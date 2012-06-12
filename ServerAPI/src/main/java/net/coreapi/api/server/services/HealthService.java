@@ -34,6 +34,11 @@ public class HealthService extends BaseService
     @Context
     private MessageContext context;
 
+    /**
+     * Ping the server to check if it is online.
+     *
+     * @return A ping pong.
+     */
     @GET
     @Path("/ping")
     public APIResponse ping ()
@@ -45,6 +50,11 @@ public class HealthService extends BaseService
         return apiResponse;
     }
 
+    /**
+     * Get the servers status.
+     *
+     * @return The servers status.
+     */
     @GET
     @Path("/status")
     public APIResponse getStatus () {
