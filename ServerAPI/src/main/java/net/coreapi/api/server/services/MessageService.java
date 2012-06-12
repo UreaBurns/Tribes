@@ -76,7 +76,7 @@ public class MessageService extends BaseService
 
     @GET
     @Path("/send-message-to-member-with-id:{id}")
-    public APIResponse sendMessage (@PathParam("id") Long id)
+    public APIResponse sendMessageToMemberWithId (@PathParam("id") Long id)
     {
 
         Member member = new Member();
