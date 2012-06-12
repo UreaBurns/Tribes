@@ -6,7 +6,10 @@ import net.coreapi.api.server.services.HealthService;
 import net.coreapi.api.server.services.MessageService;
 import net.coreapi.api.server.services.ServerStatus;
 import org.goodtech.tribes.messages.Message;
+import org.goodtech.tribes.messages.MessageList;
 import org.junit.Test;
+
+import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.fail;
@@ -42,5 +45,28 @@ public class TestMessageService
             e.printStackTrace();
             fail(e.getMessage());
         }
+    }
+
+    @Test
+    public void testGetAllMessagesForMemberById () {
+        MessageService messageService = new MessageService();
+        APIResponse apiResponse = messageService.getAllMessagesForMemberById(13L);
+        try {
+            MessageList messageList = JSONObjectMapper.<MessageList>mapJSONNodeStringToEntity(apiResponse.toResponseString(), "response", MessageList.class);
+
+
+        try {
+
+            assertEquals((Long)13L, (Long)messageList.getMessageList().get(0).getId());
+        }
+        catch (Throwable e) {
+            e.printStackTrace();
+            fail(e.getMessage());
+        }
+        }
+        catch (Throwable e) {
+            // NOP
+        }
+
     }
 }

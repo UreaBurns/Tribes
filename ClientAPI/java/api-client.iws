@@ -113,7 +113,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="250" selection-end="391" vertical-scroll-proportion="0.08571429">
+            <state line="19" column="51" selection-start="642" selection-end="642" vertical-scroll-proportion="0.54285717">
               <folding />
             </state>
           </provider>
@@ -499,35 +499,7 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestMessageService.testGetAllMessagesForMemberWithId">
-    <configuration default="false" name="TestMembersService.testGetWithId" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="api-client" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ideas" />
-      <option name="MAIN_CLASS_NAME" value="com.ideas.TestMembersService" />
-      <option name="METHOD_NAME" value="testGetWithId" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.com.ideas in api-client">
     <configuration default="false" name="TestMembersService.testGetMemberOfTypeWithId" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="api-client" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -608,6 +580,28 @@
       <option name="MAIN_CLASS_NAME" value="com.ideas.TestMessageService" />
       <option name="METHOD_NAME" value="testGetAllMessagesForMemberWithId" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="com.ideas in api-client" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="api-client" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ideas" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -748,11 +742,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestMembersService.testGetWithId" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestMembersService.testGetMemberOfTypeWithId" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestTribeService.testGetWithId" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestMessageService.testGetWithId" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestMessageService.testGetAllMessagesForMemberWithId" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestMembersService.testGetMemberOfTypeWithId" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestTribeService.testGetWithId" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestMessageService.testGetWithId" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestMessageService.testGetAllMessagesForMemberWithId" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.com.ideas in api-client" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1023,7 +1017,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="250" selection-end="391" vertical-scroll-proportion="0.08571429">
+        <state line="19" column="51" selection-start="642" selection-end="642" vertical-scroll-proportion="0.54285717">
           <folding />
         </state>
       </provider>
