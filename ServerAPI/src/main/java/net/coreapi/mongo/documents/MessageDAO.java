@@ -5,6 +5,7 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.util.JSON;
+import com.scottbyrns.mongo.MongoEntityMapper;
 import com.scottbyrns.utilities.FatalMappingException;
 import com.scottbyrns.utilities.InvalidJSONStringException;
 import com.scottbyrns.utilities.JSONObjectMapper;
@@ -38,10 +39,15 @@ public class MessageDAO
     private static final String COLLECTION_NAME = "TribesMessages";
 
     public void sendMessage (Message message) throws Exception {
+
+
+
         DBCollection dbCollection = ManagedMongoDriver.getInstance().getCollection(DATABASE_NAME, COLLECTION_NAME);
 
+
+
         try {
-            DBObject dbObject = (DBObject) JSON.parse(JSONObjectMapper.convertEntityToJSON(message));
+            DBObject dbObject = MongoEntityMapper.entityToDBObject(message);
             dbCollection.insert(dbObject);
         }
         catch (FatalMappingException e) {
@@ -59,7 +65,8 @@ public class MessageDAO
         if (cursor.hasNext()) {
             try {
                 DBObject dbObject = cursor.next();
-                Message message = JSONObjectMapper.mapJSONStringToEntity(dbObject.toString(), Message.class);
+
+                Message message = MongoEntityMapper.dbObjectToEntity(dbObject, Message.class);
                 return message;
             }
             catch (InvalidJSONStringException e) {
@@ -86,7 +93,7 @@ public class MessageDAO
         while (cursor.hasNext()) {
             try {
                 DBObject dbObject = cursor.next();
-                Message message = JSONObjectMapper.mapJSONStringToEntity(dbObject.toString(), Message.class);
+                Message message = MongoEntityMapper.dbObjectToEntity(dbObject, Message.class);
                 messageList.getMessageList().add(message);
 //                return message;
             }
