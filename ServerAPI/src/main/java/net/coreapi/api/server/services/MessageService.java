@@ -8,6 +8,8 @@ import net.coreapi.mongo.documents.MessageDAO;
 import org.goodtech.tribes.members.Member;
 import org.goodtech.tribes.messages.*;
 import org.goodtech.tribes.tribes.Tribe;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -63,6 +65,9 @@ public class MessageService extends BaseService
     @Path("/get-all-messages-for-member-with-id:{id}")
     public APIResponse getAllMessagesForMemberById (@PathParam("id") Long id)
     {
+
+
+
         MessageDAO messageDAO = new MessageDAO();
         MessageList message = null;
         try {

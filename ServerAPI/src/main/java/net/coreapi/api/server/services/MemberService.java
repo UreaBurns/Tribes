@@ -1,5 +1,7 @@
 package net.coreapi.api.server.services;
 
+import net.coreapi.api.AccessControlLayer;
+import net.coreapi.api.server.Resource;
 import net.coreapi.dao.LocationDAO;
 import org.apache.cxf.jaxrs.ext.MessageContext;
 import org.goodtech.statistics.NormalizedValue;
@@ -48,6 +50,10 @@ public class MemberService extends BaseService
     @Path("/get-with-id:{id}")
     public APIResponse getWithId (@PathParam("id") Long id)
     {
+
+//        AccessControlLayer.validatePersonaForResource(new Persona(), new Resource());
+
+
         Member member = new Member();
         member.setId(id);
 
