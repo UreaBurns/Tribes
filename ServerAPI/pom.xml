@@ -26,14 +26,6 @@
         <coreapi-net.deploy-path>stage</coreapi-net.deploy-path>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>spring-milestone</id>
-            <name>Spring Maven MILESTONE Repository</name>
-            <url>http://maven.springframework.org/milestone</url>
-        </repository>
-    </repositories>
-
     <dependencies>
 
         <dependency>
@@ -66,30 +58,6 @@
         	<version>1.3</version>
         </dependency>
 
-        <dependency>
-         <groupId>org.springframework.security.oauth</groupId>
-         <artifactId>spring-security-oauth</artifactId>
-         <version>1.0.0.M6d</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.security.oauth</groupId>
-          		<artifactId>spring-security-oauth2</artifactId>
-          		<version>1.0.0.BUILD-SNAPSHOT</version>
-        </dependency>
-
-
-        <dependency>
-        	<groupId>org.codehaus.spring-security-oauth</groupId>
-        	<artifactId>spring-security-oauth</artifactId>
-        	<version>3.19.SS3</version>
-        </dependency>
-
-        <dependency>
-      			<groupId>org.springframework</groupId>
-      			<artifactId>spring-webmvc</artifactId>
-      			<version>${org.springframework.version}</version>
-        </dependency>
 
         <!--
             Core utilities used by other modules.
@@ -193,38 +161,6 @@
             <artifactId>spring-oxm</artifactId>
             <version>${org.springframework.version}</version>
         </dependency>
-
-        <!--&lt;!&ndash;-->
-            <!--Web application development utilities applicable to both Servlet and Portlet Environments-->
-            <!--(depends on spring-core, spring-beans, spring-context)-->
-            <!--Define this if you use Spring MVC, or wish to use Struts, JSF, or another web framework with Spring (org.springframework.web.*)-->
-        <!--&ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework</groupId>-->
-            <!--<artifactId>spring-web</artifactId>-->
-            <!--<version>${org.springframework.version}</version>-->
-        <!--</dependency>-->
-
-        <!--&lt;!&ndash;-->
-            <!--Spring MVC for Servlet Environments (depends on spring-core, spring-beans, spring-context, spring-web)-->
-            <!--Define this if you use Spring MVC with a Servlet Container such as Apache Tomcat (org.springframework.web.servlet.*)-->
-        <!--&ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework</groupId>-->
-            <!--<artifactId>spring-webmvc</artifactId>-->
-            <!--<version>${org.springframework.version}</version>-->
-        <!--</dependency>-->
-
-
-        <!--&lt;!&ndash;-->
-            <!--Spring MVC for Portlet Environments (depends on spring-core, spring-beans, spring-context, spring-web)-->
-            <!--Define this if you use Spring MVC with a Portlet Container (org.springframework.web.portlet.*)-->
-        <!--&ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework</groupId>-->
-            <!--<artifactId>spring-webmvc-portlet</artifactId>-->
-            <!--<version>${org.springframework.version}</version>-->
-        <!--</dependency>-->
 
         <!--
             Support for testing Spring applications with tools such as JUnit and TestNG

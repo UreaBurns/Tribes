@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
        xmlns:jaxrs="http://cxf.apache.org/jaxrs"
        xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
        http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd
-       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
-       http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd
-       http://www.springframework.org/schema/security/oauth2 http://www.springframework.org/schema/security/spring-security-oauth2-1.0.xsd
-       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd"
-
-       xmlns:oauth="http://www.springframework.org/schema/security/oauth2"
-       xmlns:sec="http://www.springframework.org/schema/security" xmlns:mvc="http://www.springframework.org/schema/mvc">
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
     <import resource="classpath:META-INF/cxf/cxf.xml"/>
     <import resource="classpath:META-INF/cxf/cxf-extension-jaxrs-binding.xml"/>
@@ -32,194 +29,20 @@
     </bean>
 
 
+    <context:component-scan base-package="net.coreapi"/>
+
+
     <!--
 
-    Spring OAUTH2 Configuration
+        Service Beans
 
     -->
-
-    <!--<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">-->
-        <!--<property name="mappings">-->
-            <!--<value>-->
-                <!--/accounts/*=accountsController-->
-            <!--</value>-->
-        <!--</property>-->
-    <!--</bean>-->
-
-    <!--<http pattern="/oauth/token" create-session="stateless" authentication-manager-ref="clientAuthenticationManager"-->
-          <!--entry-point-ref="oauthAuthenticationEntryPoint" xmlns="http://www.springframework.org/schema/security">-->
-        <!--<intercept-url pattern="/oauth/token" access="IS_AUTHENTICATED_FULLY"/>-->
-        <!--<anonymous enabled="false"/>-->
-        <!--<http-basic entry-point-ref="oauthAuthenticationEntryPoint"/>-->
-        <!--&lt;!&ndash; include this only if you need to authenticate clients via request parameters &ndash;&gt;-->
-        <!--<custom-filter ref="clientCredentialsTokenEndpointFilter" before="BASIC_AUTH_FILTER"/>-->
-        <!--<access-denied-handler ref="oauthAccessDeniedHandler"/>-->
-    <!--</http>-->
-
-    <!--&lt;!&ndash; The OAuth2 protected resources are separated out into their own block so we can deal with authorization and error handling-->
-            <!--separately. This isn't mandatory, but it makes it easier to control the behaviour. &ndash;&gt;-->
-    <!--<http pattern="/oauth/(users|clients)/.*" request-matcher="regex" create-session="stateless"-->
-          <!--entry-point-ref="oauthAuthenticationEntryPoint"-->
-          <!--use-expressions="true" xmlns="http://www.springframework.org/schema/security">-->
-        <!--<anonymous enabled="false"/>-->
-        <!--<intercept-url pattern="/oauth/users/([^/].*?)/tokens/.*"-->
-                       <!--access="#oauth2.clientHasRole('ROLE_CLIENT') and (hasRole('ROLE_USER') or #oauth2.isClient()) and #oauth2.hasScope('write')"-->
-                       <!--method="DELETE"/>-->
-        <!--<intercept-url pattern="/oauth/users/.*"-->
-                       <!--access="#oauth2.clientHasRole('ROLE_CLIENT') and (hasRole('ROLE_USER') or #oauth2.isClient()) and #oauth2.hasScope('read')"-->
-                       <!--method="GET"/>-->
-        <!--<intercept-url pattern="/oauth/clients/.*"-->
-                       <!--access="#oauth2.clientHasRole('ROLE_CLIENT') and #oauth2.isClient() and #oauth2.hasScope('read')"-->
-                       <!--method="GET"/>-->
-        <!--<custom-filter ref="resourceServerFilter" before="PRE_AUTH_FILTER"/>-->
-        <!--<access-denied-handler ref="oauthAccessDeniedHandler"/>-->
-        <!--<expression-handler ref="oauthWebExpressionHandler"/>-->
-    <!--</http>-->
-
-    <!--&lt;!&ndash; The OAuth2 protected resources are separated out into their own block so we can deal with authorization and error handling-->
-            <!--separately. This isn't mandatory, but it makes it easier to control the behaviour. &ndash;&gt;-->
-    <!--&lt;!&ndash;<http pattern="/photos/**" create-session="never" entry-point-ref="oauthAuthenticationEntryPoint"&ndash;&gt;-->
-          <!--&lt;!&ndash;access-decision-manager-ref="accessDecisionManager" xmlns="http://www.springframework.org/schema/security">&ndash;&gt;-->
-        <!--&lt;!&ndash;<anonymous enabled="false"/>&ndash;&gt;-->
-        <!--&lt;!&ndash;&lt;!&ndash;<intercept-url pattern="/photos" access="ROLE_USER,SCOPE_READ"/>&ndash;&gt;&ndash;&gt;-->
-        <!--&lt;!&ndash;&lt;!&ndash;<intercept-url pattern="/photos/trusted/**" access="ROLE_CLIENT,SCOPE_TRUST"/>&ndash;&gt;&ndash;&gt;-->
-        <!--&lt;!&ndash;&lt;!&ndash;<intercept-url pattern="/photos/user/**" access="ROLE_USER,SCOPE_TRUST"/>&ndash;&gt;&ndash;&gt;-->
-        <!--&lt;!&ndash;&lt;!&ndash;<intercept-url pattern="/photos/**" access="ROLE_USER,SCOPE_READ"/>&ndash;&gt;&ndash;&gt;-->
-        <!--&lt;!&ndash;<custom-filter ref="resourceServerFilter" before="PRE_AUTH_FILTER"/>&ndash;&gt;-->
-        <!--&lt;!&ndash;<access-denied-handler ref="oauthAccessDeniedHandler"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;</http>&ndash;&gt;-->
-
-    <!--<http access-denied-page="/login.jsp?authorization_error=true" disable-url-rewriting="true"-->
-          <!--xmlns="http://www.springframework.org/schema/security">-->
-        <!--<intercept-url pattern="/oauth/**" access="ROLE_USER"/>-->
-        <!--<intercept-url pattern="/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>-->
-
-        <!--<form-login authentication-failure-url="/auth/oauth2/error" default-target-url="/auth/oauth2/success"-->
-        <!--login-page="/auth/oauth2/login" login-processing-url="/auth/oauth2/login-proccessing" />-->
-        <!--<logout logout-success-url="/auth/oauth2/logout-success" logout-url="/auth/oauth2/logout" />-->
-        <!--<anonymous/>-->
-    <!--</http>-->
-
-    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.AnnotationMethodHandlerAdapter">-->
-        <!--<property name="customArgumentResolvers">-->
-            <!--<list>-->
-                <!--<bean class="org.springframework.data.web.PageableArgumentResolver"/>-->
-            <!--</list>-->
-        <!--</property>-->
-    <!--</bean>-->
-
-    <!--<mvc:annotation-driven/>-->
-
-    <!--<mvc:default-servlet-handler/>-->
-
-    <!--<sec:global-method-security pre-post-annotations="enabled" proxy-target-class="true">-->
-        <!--&lt;!&ndash;you could also wire in the expression handler up at the layer of the http filters. See https://jira.springsource.org/browse/SEC-1452 &ndash;&gt;-->
-        <!--<sec:expression-handler ref="oauthExpressionHandler"/>-->
-    <!--</sec:global-method-security>-->
-
-
-    <!--<bean id="oauthAuthenticationEntryPoint"-->
-          <!--class="org.springframework.security.oauth2.provider.error.OAuth2AuthenticationEntryPoint">-->
-        <!--<property name="realmName" value="tribes"/>-->
-    <!--</bean>-->
-
-    <!--<bean id="oauthAccessDeniedHandler"-->
-          <!--class="org.springframework.security.oauth2.provider.error.OAuth2AccessDeniedHandler"/>-->
-
-    <!--<bean id="clientCredentialsTokenEndpointFilter"-->
-          <!--class="org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter">-->
-        <!--<property name="authenticationManager" ref="clientAuthenticationManager"/>-->
-    <!--</bean>-->
-
-    <!--<bean id="accessDecisionManager" class="org.springframework.security.access.vote.UnanimousBased"-->
-          <!--xmlns="http://www.springframework.org/schema/beans">-->
-        <!--<constructor-arg>-->
-            <!--<list>-->
-                <!--<bean class="org.springframework.security.oauth2.provider.vote.ScopeVoter"/>-->
-                <!--<bean class="org.springframework.security.access.vote.RoleVoter"/>-->
-                <!--<bean class="org.springframework.security.access.vote.AuthenticatedVoter"/>-->
-            <!--</list>-->
-        <!--</constructor-arg>-->
-    <!--</bean>-->
-
-    <!--<authentication-manager id="clientAuthenticationManager" xmlns="http://www.springframework.org/schema/security">-->
-        <!--<authentication-provider user-service-ref="clientDetailsUserService"/>-->
-    <!--</authentication-manager>-->
-
-    <!--<authentication-manager alias="authenticationManager" xmlns="http://www.springframework.org/schema/security">-->
-        <!--<authentication-provider>-->
-            <!--<user-service>-->
-                <!--<user name="scott" password="starnut" authorities="ROLE_USER"/>-->
-                <!--<user name="maggie" password="starnut" authorities="ROLE_USER"/>-->
-            <!--</user-service>-->
-        <!--</authentication-provider>-->
-    <!--</authentication-manager>-->
-
-    <!--<bean id="clientDetailsUserService"-->
-          <!--class="org.springframework.security.oauth2.provider.client.ClientDetailsUserDetailsService">-->
-        <!--<constructor-arg ref="clientDetails"/>-->
-    <!--</bean>-->
-
-    <!--<bean id="tokenStore" class="org.springframework.security.oauth2.provider.token.InMemoryTokenStore"/>-->
-
-    <!--<bean id="tokenServices" class="org.springframework.security.oauth2.provider.token.DefaultTokenServices">-->
-        <!--<property name="tokenStore" ref="tokenStore"/>-->
-        <!--<property name="supportRefreshToken" value="true"/>-->
-    <!--</bean>-->
-
-    <!--<bean id="userApprovalHandler" class="net.coreapi.api.server.authsUserApprovalHandler">-->
-        <!--<property name="autoApproveClients">-->
-            <!--<set>-->
-                <!--<value>my-less-trusted-autoapprove-client</value>-->
-            <!--</set>-->
-        <!--</property>-->
-        <!--<property name="tokenServices" ref="tokenServices"/>-->
-    <!--</bean>-->
-
-    <!--<oauth:authorization-server client-details-service-ref="clientDetails" token-services-ref="tokenServices"-->
-                                <!--user-approval-handler-ref="userApprovalHandler">-->
-        <!--<oauth:authorization-code/>-->
-        <!--<oauth:implicit/>-->
-        <!--<oauth:refresh-token/>-->
-        <!--<oauth:client-credentials/>-->
-        <!--<oauth:password/>-->
-    <!--</oauth:authorization-server>-->
-
-    <!--<oauth:resource-server id="resourceServerFilter" resource-id="tribes" token-services-ref="tokenServices"/>-->
-
-    <!--<oauth:client-details-service id="clientDetails">-->
-        <!--<oauth:client client-id="my-trusted-client"-->
-                      <!--authorized-grant-types="password,authorization_code,refresh_token,implicit"-->
-                      <!--authorities="ROLE_CLIENT, ROLE_TRUSTED_CLIENT" scope="read,write,trust"/>-->
-        <!--<oauth:client client-id="my-trusted-client-with-secret"-->
-                      <!--authorized-grant-types="password,authorization_code,refresh_token,implicit"-->
-                      <!--secret="somesecret" authorities="ROLE_CLIENT, ROLE_TRUSTED_CLIENT"/>-->
-        <!--<oauth:client client-id="my-client-with-secret" authorized-grant-types="client_credentials"-->
-                      <!--authorities="ROLE_CLIENT"-->
-                      <!--scope="read" secret="secret"/>-->
-        <!--<oauth:client client-id="my-less-trusted-client" authorized-grant-types="authorization_code,implicit"-->
-                      <!--authorities="ROLE_CLIENT"/>-->
-        <!--<oauth:client client-id="my-less-trusted-autoapprove-client" authorized-grant-types="implicit"-->
-                      <!--authorities="ROLE_CLIENT"/>-->
-        <!--<oauth:client client-id="my-client-with-registered-redirect"-->
-                      <!--authorized-grant-types="authorization_code,client_credentials"-->
-                      <!--authorities="ROLE_CLIENT" redirect-uri="http://anywhere?key=value" scope="read,trust"/>-->
-        <!--<oauth:client client-id="my-untrusted-client-with-registered-redirect"-->
-                      <!--authorized-grant-types="authorization_code"-->
-                      <!--authorities="ROLE_CLIENT" redirect-uri="http://anywhere" scope="read"/>-->
-        <!--<oauth:client client-id="tonr" resource-ids="sparklr" authorized-grant-types="authorization_code,implicit"-->
-                      <!--authorities="ROLE_CLIENT" scope="read,write" secret="secret"/>-->
-    <!--</oauth:client-details-service>-->
-
-
-    <!--<bean id="accessConfirmationController" class="net.coreapi.api.server.authsConfirmationController">-->
-        <!--<property name="clientDetailsService" ref="clientDetails"/>-->
-    <!--</bean>-->
-
-
-
-
-    <context:component-scan base-package="net.coreapi"/>
+    <bean id="healthService" class="net.coreapi.api.server.services.HealthService"></bean>
+    <bean id="webViewService" class="net.coreapi.api.server.services.WebViewService"></bean>
+    <bean id="memberService" class="net.coreapi.api.server.services.MemberService"></bean>
+    <bean id="tribeService" class="net.coreapi.api.server.services.TribeService"></bean>
+    <bean id="messageService" class="net.coreapi.api.server.services.MessageService"></bean>
+    <bean id="oauth2Service" class="net.coreapi.api.server.services.OAuth2Service"></bean>
 
     <jaxrs:server id="services" address="/">
         <jaxrs:serviceBeans>
@@ -228,17 +51,13 @@
             <ref bean="memberService"/>
             <ref bean="tribeService"/>
             <ref bean="messageService"/>
+            <ref bean="oauth2Service"/>
         </jaxrs:serviceBeans>
         <jaxrs:providers>
             <bean id="apiResponseMessageBodyWriter" class="net.coreapi.api.server.APIResponseMessageBodyWriter"/>
         </jaxrs:providers>
     </jaxrs:server>
 
-    <bean id="healthService" class="net.coreapi.api.server.services.HealthService"></bean>
-    <bean id="webViewService" class="net.coreapi.api.server.services.WebViewService"></bean>
-    <bean id="memberService" class="net.coreapi.api.server.services.MemberService"></bean>
-    <bean id="tribeService" class="net.coreapi.api.server.services.TribeService"></bean>
-    <bean id="messageService" class="net.coreapi.api.server.services.MessageService"></bean>
 
 
     <!--<bean id="ideasDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
