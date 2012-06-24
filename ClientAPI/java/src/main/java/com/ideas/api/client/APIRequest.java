@@ -15,14 +15,14 @@ public class APIRequest
 
     public static final String JSON_DATA = "JSON_DATA";
 
-    private static final String baseRequestUrl = "http://coreapi.net:8080/SNAPSHOTS/stage";
-//    private static final String baseRequestUrl = "http://localhost:8083/ServerAPI";
+//    private static final String baseRequestUrl = "http://coreapi.net:8080/SNAPSHOTS/stage";
+    private static final String baseRequestUrl = "http://localhost:8083/ServerAPI";
 
     private RequestType requestType;
     private Class requestEntityClass;
     private String requestUrl;
     private Map<String, String> requestParametersMap = new HashMap<String, String>();
-
+    private Object requestEntity;
 
     public Class getRequestEntityClass()
     {
@@ -129,5 +129,15 @@ public class APIRequest
     public Map<String, String> getRequestParametersMap()
     {
         return requestParametersMap;
+    }
+
+    public Object getRequestEntity()
+    {
+        return requestEntity;
+    }
+
+    public void setRequestEntity(Object requestEntity)
+    {
+        this.requestEntity = requestEntity;
     }
 }

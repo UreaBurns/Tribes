@@ -8,7 +8,8 @@
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
        http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd
-       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+       xmlns:cxf="http://cxf.apache.org/core">
 
     <import resource="classpath:META-INF/cxf/cxf.xml"/>
     <import resource="classpath:META-INF/cxf/cxf-extension-jaxrs-binding.xml"/>
@@ -31,24 +32,31 @@
 
     <context:component-scan base-package="net.coreapi"/>
 
+
+    <bean id="healthService" class="net.coreapi.api.server.services.HealthService"></bean>
+    <bean id="oauth2Service" class="net.coreapi.api.server.services.OAuth2Service"></bean>
+    <bean id="webViewService" class="net.coreapi.api.server.services.WebViewService"></bean>
+    <bean id="memberService" class="net.coreapi.api.server.services.MemberService"></bean>
+    <bean id="tribeService" class="net.coreapi.api.server.services.TribeService"></bean>
+    <bean id="messageService" class="net.coreapi.api.server.services.MessageService"></bean>
+
     <jaxrs:server id="services" address="/">
+        <jaxrs:features>
+             <cxf:logging/>
+        </jaxrs:features>
         <jaxrs:serviceBeans>
             <ref bean="healthService" />
             <ref bean="webViewService" />
             <ref bean="memberService" />
             <ref bean="tribeService" />
             <ref bean="messageService" />
+            <ref bean="oauth2Service" />
         </jaxrs:serviceBeans>
         <jaxrs:providers>
             <bean id="apiResponseMessageBodyWriter" class="net.coreapi.api.server.APIResponseMessageBodyWriter" />
         </jaxrs:providers>
     </jaxrs:server>
 
-    <bean id="healthService" class="net.coreapi.api.server.services.HealthService"></bean>
-    <bean id="webViewService" class="net.coreapi.api.server.services.WebViewService"></bean>
-    <bean id="memberService" class="net.coreapi.api.server.services.MemberService"></bean>
-    <bean id="tribeService" class="net.coreapi.api.server.services.TribeService"></bean>
-    <bean id="messageService" class="net.coreapi.api.server.services.MessageService"></bean>
 
 
 

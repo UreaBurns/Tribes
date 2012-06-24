@@ -11,6 +11,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:3.0.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:3.0.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc-portlet:3.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.ideas:api-client:1.0.3-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.scottbyrns.utilities:json-object-mapper:1.1.1-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.6.2" level="project" />

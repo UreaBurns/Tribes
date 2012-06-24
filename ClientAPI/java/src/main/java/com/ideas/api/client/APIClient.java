@@ -1,6 +1,7 @@
 package com.ideas.api.client;
 
 import com.ideas.api.client.services.ResponseError;
+import com.scottbyrns.utilities.FatalMappingException;
 import com.scottbyrns.utilities.JSONObjectMapper;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -46,11 +47,16 @@ public class APIClient
     {
         APIResponse apiResponse = null;
 
-        // get a client connection
+        // Establish a client collection.
         HttpClient httpclient = new DefaultHttpClient();
         HttpParams clientParams = httpclient.getParams();
-        HttpConnectionParams.setConnectionTimeout(clientParams, 20000);
-        HttpConnectionParams.setSoTimeout(clientParams, 20000);
+        HttpConnectionParams.setConnectionTimeout(clientParams,
+                                                  20000);
+        HttpConnectionParams.setSoTimeout(clientParams,
+                                          20000);
+
+        // TODO move http client connection creation out of this method.
+        // TODO author a generic configuration entity. Hydrate it from a config file.
 
         HttpRequestBase requestBase = getRequestBaseForRequest(request);
 
@@ -59,10 +65,8 @@ public class APIClient
         while (keySetIterator.hasNext())
         {
             String key = keySetIterator.next();
-            clientParams.setParameter(
-                    key,
-                    request.getRequestParametersMap().get(key)
-            );
+            clientParams.setParameter(key,
+                                      request.getRequestParametersMap().get(key));
         }
 
         requestBase.setParams(clientParams);
@@ -74,37 +78,43 @@ public class APIClient
         }
         catch (IOException e)
         {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         }
         if (null != response)
         {
             HttpEntity resEntity = response.getEntity();
 
-            try {
+            try
+            {
                 String responseText = EntityUtils.toString(resEntity);
 
-                if (null == responseText || responseText.isEmpty()) {
+                if (null == responseText || responseText.isEmpty())
+                {
                     responseText = "{\"status\":404, \"response\":{\"message\":\"Resource not found.\"}}";
                 }
 
-                apiResponse = JSONObjectMapper.<APIResponse>mapJSONStringToEntity(responseText, APIResponse.class);
+                apiResponse = JSONObjectMapper.<APIResponse>mapJSONStringToEntity(responseText,
+                                                                                  APIResponse.class);
 
                 apiResponse.setRawResponseString(responseText);
 
-//                System.out.println(apiResponse.getRawResponseString());
+                //                System.out.println(apiResponse.getRawResponseString());
 
-                ResponseEntity responseEntity = (ResponseEntity)JSONObjectMapper.mapJSONNodeStringToEntity(responseText, "response", request.getRequestEntityClass());
-                apiResponse.setResponse(
-                        responseEntity
-                                       );
-                try {
+                ResponseEntity responseEntity = (ResponseEntity) JSONObjectMapper.mapJSONNodeStringToEntity(responseText,
+                                                                                                            "response",
+                                                                                                            request.getRequestEntityClass());
+                apiResponse.setResponse(responseEntity);
+                try
+                {
                     handleResponseCode(apiResponse);
                 }
-                catch (ResponseError e) {
+                catch (ResponseError e)
+                {
                     e.printStackTrace();
                 }
             }
-            catch (Throwable e) {
+            catch (Throwable e)
+            {
                 e.printStackTrace();
                 // NOP
             }
@@ -114,9 +124,10 @@ public class APIClient
         return apiResponse;
     }
 
-    private void handleResponseCode (APIResponse apiResponse) throws ResponseError
+    private void handleResponseCode(APIResponse apiResponse) throws ResponseError
     {
-        if (apiResponse.getStatus() != 200) {
+        if (apiResponse.getStatus() != 200)
+        {
             throw new ResponseError(apiResponse.getStatus() + "");
         }
     }
@@ -126,10 +137,9 @@ public class APIClient
      *
      * @param request The request.
      * @return The request base.
-     *
      * @todo Reduce complexity.
      */
-    private HttpRequestBase getRequestBaseForRequest (APIRequest request)
+    private HttpRequestBase getRequestBaseForRequest(APIRequest request)
     {
         if (request.getRequestType().equals(RequestType.GET))
         {
@@ -138,18 +148,19 @@ public class APIClient
         else if (request.getRequestType().equals(RequestType.JSON_POST))
         {
             HttpPost post = new HttpPost(request.getRequestUrl().toString());
-            post.setHeader("Content-type", "application/json");
+            post.setHeader("Content-type",
+                           "application/json");
             try
             {
-                post.setEntity(
-                        new StringEntity(
-                                request.getRequestParametersMap().get(APIRequest.JSON_DATA),
-                                "UTF-8"
-                        )
-                );
+                String requestJSON = JSONObjectMapper.convertEntityToJSON(request.getRequestEntity());
+                post.setEntity(new StringEntity(requestJSON,
+                                                "UTF-8"));
             }
             catch (UnsupportedEncodingException e)
             {
+                e.printStackTrace();
+            }
+            catch (FatalMappingException e) {
                 e.printStackTrace();
             }
 
@@ -157,7 +168,19 @@ public class APIClient
         }
         else if (request.getRequestType().equals(RequestType.POST))
         {
-            return new HttpPost(request.getRequestUrl().toString());
+            HttpPost httpPost = new HttpPost(request.getRequestUrl().toString());
+            httpPost.setHeader("Content-type",
+                               "application/x-www-form-urlencoded");
+            try
+            {
+                httpPost.setEntity(new StringEntity(request.getRequestParametersMap().get(APIRequest.JSON_DATA),
+                                                    "UTF-8"));
+            }
+            catch (UnsupportedEncodingException e)
+            {
+                e.printStackTrace();
+            }
+            return httpPost;
         }
         else
         {
