@@ -30,6 +30,12 @@
     <dependencies>
 
         <dependency>
+          <groupId>org.apache.cxf</groupId>
+          <artifactId>cxf-rt-rs-security-oauth</artifactId>
+          <version>2.5.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.ideas</groupId>
             <artifactId>api-client</artifactId>
             <version>1.0.3-SNAPSHOT</version>

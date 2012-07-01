@@ -57,7 +57,26 @@
         </jaxrs:providers>
     </jaxrs:server>
 
+    <!-- implements OAuthDataProvider -->
+    <bean id="oauthProvider" class="net.coreapi.api.server.auth.oauth2.DefaultOAuthServiceProvider"/>
 
+    <bean id="requestTokenService" class="org.apache.cxf.rs.security.oauth.services.RequestTokenService">
+       <property name="dataProvider" ref="oauthProvider"/>
+    </bean>
+
+    <bean id="accessTokenService" class="org.apache.cxf.rs.security.oauth.services.AccessTokenService">
+      <property name="dataProvider" ref="oauthProvider"/>
+    </bean>
+
+    <jaxrs:server id="oauthServer" address="/oauth">
+        <jaxrs:features>
+             <cxf:logging/>
+        </jaxrs:features>
+       <jaxrs:serviceBeans>
+          <ref bean="requestTokenService"/>
+          <ref bean="accessTokenService"/>
+      </jaxrs:serviceBeans>
+    </jaxrs:server>
 
 
 

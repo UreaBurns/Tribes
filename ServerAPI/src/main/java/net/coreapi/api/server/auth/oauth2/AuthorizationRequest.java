@@ -17,12 +17,12 @@ package net.coreapi.api.server.auth.oauth2;
  */
 public class AuthorizationRequest
 {
-//        oauth_signature ="%2BJfoxyJ6H5S2k4bwIZg0vaTovfI%3D",
-//        oauth_nonce="09b10c5b-f815-4807-b92c-f6a8dcaef583",
-//        oauth_signature_method="HMAC-SHA1",
-//        oauth_consumer_key="http%3A%2F%2Flocalhost%3A8080%2FTokenService%2Fresources%2Foauth%2Fv1%2Fconsumer%2FStockClient",
-//        oauth_timestamp="1247685651"
-    private String oauth_signature, oauth_nounce, oauth_signature_method, oauth_consumer_key, oauth_timestamp;
+    //        oauth_signature ="%2BJfoxyJ6H5S2k4bwIZg0vaTovfI%3D",
+    //        oauth_nonce="09b10c5b-f815-4807-b92c-f6a8dcaef583",
+    //        oauth_signature_method="HMAC-SHA1",
+    //        oauth_consumer_key="http%3A%2F%2Flocalhost%3A8080%2FTokenService%2Fresources%2Foauth%2Fv1%2Fconsumer%2FStockClient",
+    //        oauth_timestamp="1247685651"
+    private String oauth_signature, oauth_nounce, oauth_signature_method, oauth_consumer_key, oauth_timestamp, oauth_callback, oauth_version;
 
     public String getOauth_signature()
     {
@@ -72,5 +72,25 @@ public class AuthorizationRequest
     public void setOauth_timestamp(String oauth_timestamp)
     {
         this.oauth_timestamp = oauth_timestamp;
+    }
+
+    public String getOauth_callback()
+    {
+        return oauth_callback;
+    }
+
+    public void setOauth_callback(String oauth_callback)
+    {
+        this.oauth_callback = oauth_callback;
+    }
+
+    public String getOauth_version()
+    {
+        return oauth_version;
+    }
+
+    public void setOauth_version(String oauth_version)
+    {
+        this.oauth_version = oauth_version;
     }
 }

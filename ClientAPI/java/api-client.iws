@@ -58,7 +58,72 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java" line="76" class="com.ideas.api.client.APIClient" package="com.ideas.api.client">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java" line="91" class="com.ideas.api.client.APIClient" package="com.ideas.api.client">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/OAuth2Services.java" line="48" class="com.ideas.api.client.services.members.OAuth2Services" package="com.ideas.api.client.services.members">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/OAuth2Services.java" line="75" class="com.ideas.api.client.services.members.OAuth2Services" package="com.ideas.api.client.services.members">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/ideas/TestOAuth2Service.java" line="35" class="com.ideas.TestOAuth2Service" package="com.ideas">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/ideas/TestOAuth2Service.java" line="36" class="com.ideas.TestOAuth2Service" package="com.ideas">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java" line="260" class="com.ideas.api.client.APIClient" package="com.ideas.api.client">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -112,10 +177,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="OAuth2Services.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AuthorizationRequest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/entities/AuthorizationRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="41" selection-start="1283" selection-end="1301" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OAuth.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/entities/OAuth.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="369" column="32" selection-start="13862" selection-end="13868" vertical-scroll-proportion="-8.5">
+              <folding>
+                <element signature="e#0#14161#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#4785#4802#0" expanded="true" />
+                <element signature="e#8587#8598#0" expanded="true" />
+                <element signature="e#10772#10788#0" expanded="true" />
+                <element signature="e#11267#11278#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OAuthUtilities.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/utilities/OAuthUtilities.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="769" selection-end="855" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OAuth2Services.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/OAuth2Services.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="26" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.33206108">
+            <state line="75" column="0" selection-start="2789" selection-end="2789" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,19 +222,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/BaseService.java">
+      <file leaf-file-name="AuthorizationCertificate.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/entities/AuthorizationCertificate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+            <state line="18" column="28" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestOAuth2Service.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TestOAuth2Service.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestOAuth2Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="31" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.0">
+            <state line="36" column="0" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.92943203">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,28 +242,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="APIRequest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
+      <file leaf-file-name="MembersServices.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="40" selection-start="793" selection-end="793" vertical-scroll-proportion="0.0">
+            <state line="24" column="13" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/RequestType.java">
+      <file leaf-file-name="OAuthClientRequestAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/oauth/OAuthClientRequestAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="15" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+            <state line="34" column="12" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="APIResponse.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponse.java">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
+            <state line="55" column="43" selection-start="1718" selection-end="1736" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -173,35 +272,12 @@
       <file leaf-file-name="APIClient.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="2368" selection-end="2368" vertical-scroll-proportion="-6.1923075">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthorizationRequest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/AuthorizationRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="1" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageServices.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageServices.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="14" selection-start="1103" selection-end="1647" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageMethods.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageMethods.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="116" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="91" column="0" selection-start="2916" selection-end="2916" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#3566#3579#0" expanded="true" />
+                <element signature="e#3987#4000#0" expanded="true" />
+                <element signature="e#6992#7007#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -216,22 +292,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersServices.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/ResponseError.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ideas/TestMembersService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/TribeMethods.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/TribeServices.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ideas/TestTribeService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageMethods.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ideas/TestMessageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/OAuth2Service.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/AuthorizationRequest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ideas/TestOAuth2Service.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/OAuth2Services.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/entities/RequestError.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/ClientConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/oauth/OAuthClientRequestAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/utilities/OAuthUtilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/entities/AuthorizationRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/entities/AuthorizationCertificate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/entities/OAuth.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/OAuth2Services.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ideas/TestOAuth2Service.java" />
       </list>
     </option>
   </component>
@@ -418,6 +494,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="utilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -452,7 +558,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="oauth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="members" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -498,9 +668,9 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -795,17 +965,17 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39747635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39747635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18933824" sideWeight="0.6025237" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19178921" sideWeight="0.6855941" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24938725" sideWeight="0.6025237" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6046267" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24938725" sideWeight="0.6855941" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3144059" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -906,27 +1076,29 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestTribeService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersMethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1088" selection-end="1309" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="20" column="4" selection-start="820" selection-end="920" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/TribeServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="1027" selection-end="1531" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="24" column="13" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestMessageService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="63" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="12" column="13" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="86" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/entities/RequestError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="4" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atlassian-ide-plugin.xml">
@@ -936,88 +1108,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="820" selection-end="920" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="31" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
+        <state line="55" column="43" selection-start="1718" selection-end="1736" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageServices.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MembersServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="14" selection-start="1103" selection-end="1647" vertical-scroll-proportion="0.0">
+        <state line="24" column="13" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/MessageMethods.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/entities/AuthorizationCertificate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="116" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0">
+        <state line="18" column="28" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/AuthorizationRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/entities/OAuth.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="1" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.0">
+        <state line="369" column="32" selection-start="13862" selection-end="13868" vertical-scroll-proportion="-8.5">
+          <folding>
+            <element signature="e#0#14161#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#4785#4802#0" expanded="true" />
+            <element signature="e#8587#8598#0" expanded="true" />
+            <element signature="e#10772#10788#0" expanded="true" />
+            <element signature="e#11267#11278#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/oauth/OAuthClientRequestAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="12" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/BaseService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/utilities/OAuthUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+        <state line="22" column="0" selection-start="769" selection-end="855" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/entities/AuthorizationRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/RequestType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="15" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="40" selection-start="793" selection-end="793" vertical-scroll-proportion="0.0">
+        <state line="28" column="41" selection-start="1283" selection-end="1301" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/APIClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="2368" selection-end="2368" vertical-scroll-proportion="-6.1923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestOAuth2Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="31" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.0">
+        <state line="91" column="0" selection-start="2916" selection-end="2916" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3566#3579#0" expanded="true" />
+            <element signature="e#3987#4000#0" expanded="true" />
+            <element signature="e#6992#7007#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ideas/api/client/services/members/OAuth2Services.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="26" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.33206108">
+        <state line="75" column="0" selection-start="2789" selection-end="2789" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ideas/TestOAuth2Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.92943203">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

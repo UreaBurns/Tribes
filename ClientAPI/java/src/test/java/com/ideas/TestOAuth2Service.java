@@ -1,8 +1,13 @@
 package com.ideas;
 
-import com.ideas.api.client.services.members.AuthorizationRequest;
+import com.ideas.api.client.entities.AuthorizationRequest;
 import com.ideas.api.client.services.members.OAuth2Services;
+import net.smartam.leeloo.common.OAuth;
+import net.smartam.leeloo.common.utils.OAuthUtils;
 import org.junit.Test;
+
+import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  * Copyright (C) 2012 by Scott Byrns
@@ -24,11 +29,13 @@ public class TestOAuth2Service
     @Test
     public void testLogin () {
         AuthorizationRequest authorizationRequest = new AuthorizationRequest();
-        authorizationRequest.setOauth_consumer_key("consumer_key");
-        authorizationRequest.setOauth_nounce("nounce");
-        authorizationRequest.setOauth_signature("signature");
-        authorizationRequest.setOauth_signature_method("signature_method");
-        authorizationRequest.setOauth_timestamp("timestamp");
+        authorizationRequest.setOauth_consumer_key("123456789");
+        authorizationRequest.setOauth_nounce("e365fa02-772e-4e33-900d-00a766ccadf8");
+        authorizationRequest.setOauth_signature("ztTQuqaJS7L6dNQwn%2Fqi1MdaqQQ%3D");
+        authorizationRequest.setOauth_signature_method("HMAC-SHA1");
+        authorizationRequest.setOauth_timestamp(Long.toString(System.currentTimeMillis() / 1000));
+        authorizationRequest.setOauth_version("1.0");
+        authorizationRequest.setOauth_callback("http://localhost:8083/ServerAPI/members/get-with-id:12");
         new OAuth2Services().login(authorizationRequest);
     }
 }

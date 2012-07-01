@@ -1,4 +1,4 @@
-package com.ideas.api.client.services.members;
+package com.ideas.api.client.entities;
 
 /**
  * Copyright (C) 2012 by Scott Byrns
@@ -22,7 +22,16 @@ public class AuthorizationRequest
 //        oauth_signature_method="HMAC-SHA1",
 //        oauth_consumer_key="http%3A%2F%2Flocalhost%3A8080%2FTokenService%2Fresources%2Foauth%2Fv1%2Fconsumer%2FStockClient",
 //        oauth_timestamp="1247685651"
-    private String oauth_signature, oauth_nounce, oauth_signature_method, oauth_consumer_key, oauth_timestamp;
+
+
+//oauth_callback="http%3A%2F%2Flocalhost%3A8080%2Fservices%2Freservations%2Freserve%2Fcomplete",
+//                     oauth_nonce="e365fa02-772e-4e33-900d-00a766ccadf8",
+//                     oauth_consumer_key="123456789",
+//                     oauth_signature_method="HMAC-SHA1",
+//                     oauth_timestamp="1320748683",
+//                     oauth_version="1.0",
+//                     oauth_signature="ztTQuqaJS7L6dNQwn%2Fqi1MdaqQQ%3D"
+    private String oauth_signature, oauth_nounce, oauth_signature_method, oauth_consumer_key, oauth_timestamp, oauth_callback, oauth_version;
 
     public String getOauth_signature()
     {
@@ -72,5 +81,25 @@ public class AuthorizationRequest
     public void setOauth_timestamp(String oauth_timestamp)
     {
         this.oauth_timestamp = oauth_timestamp;
+    }
+
+    public String getOauth_callback()
+    {
+        return oauth_callback;
+    }
+
+    public void setOauth_callback(String oauth_callback)
+    {
+        this.oauth_callback = oauth_callback;
+    }
+
+    public String getOauth_version()
+    {
+        return oauth_version;
+    }
+
+    public void setOauth_version(String oauth_version)
+    {
+        this.oauth_version = oauth_version;
     }
 }

@@ -16,7 +16,7 @@ public class APIRequest
     public static final String JSON_DATA = "JSON_DATA";
 
 //    private static final String baseRequestUrl = "http://coreapi.net:8080/SNAPSHOTS/stage";
-    private static final String baseRequestUrl = "http://localhost:8083/ServerAPI";
+    private static final String baseRequestUrl = ClientConfiguration.getBaseRequestURI();
 
     private RequestType requestType;
     private Class requestEntityClass;
